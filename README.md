@@ -1,7 +1,7 @@
 <div align="center">
 
 # 💫 About Me:
-'m Dhanush Pillay, a CSE student who loves turning small ideas into real projects.<br>I explore Python, cybersecurity, AI integration, web development and cloud while learning something new every day.<br><br>I like experimenting, breaking things, fixing them and getting a little better with every build.<br><br>Always curious. Always coding. Always growing.<br><br>
+'m Dhanush Pillay, a Computer Science Engineering student who loves turning small ideas into real projects.<br>I explore Python, cybersecurity, AI integration, web development and cloud while learning something new every day.<br><br>I like experimenting, breaking things, fixing them and getting a little better with every build.<br><br>Always curious. Always coding. Always growing.<br><br>
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dhanush-pillay-008a47271) 
