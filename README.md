@@ -1,13 +1,13 @@
 <div align="center">
 
-# 💫 About Me:
+# About Me:
 'm Dhanush Pillay, a Computer Science Engineering student who loves turning small ideas into real projects.<br>I explore Python, cybersecurity, AI integration, web development and cloud while learning something new every day.<br><br>I like experimenting, breaking things, fixing them and getting a little better with every build.<br><br>Always curious. Always coding. Always growing.<br><br>
 
-## 🌐 Socials:
+## Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dhanush-pillay-008a47271) 
 [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:dhanushpillay28@gmail.com) 
 
-# 💻 Tech Stack:
+# Tech Stack:
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) 
@@ -32,6 +32,6 @@
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) 
 ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
 
-# 📊 GitHub Stats:
+# GitHub Stats:
 ![](https://nirzak-streak-stats.vercel.app/?user=DhanushPillay&theme=neon&hide_border=true)<br/>
 </div>
