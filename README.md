@@ -34,4 +34,11 @@ I'm Dhanush Pillay, a Computer Science Engineering student who loves turning sma
 
 # GitHub Stats:
 ![](https://nirzak-streak-stats.vercel.app/?user=DhanushPillay&theme=neon&hide_border=true)<br/>
+
+
+
+
+# Contributions
+![snake gif](https://github.com/DhanushPillay/DhanushPillay/blob/output/github-snake-dark.svg)
+
 </div>
