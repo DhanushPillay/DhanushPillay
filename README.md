@@ -38,7 +38,7 @@ I'm Dhanush Pillay, a Computer Science Engineering student who loves turning sma
 
 
 
-# Contributions
+# Contributions:
 ![snake gif](https://github.com/DhanushPillay/DhanushPillay/blob/output/github-snake-dark.svg)
 
 </div>
