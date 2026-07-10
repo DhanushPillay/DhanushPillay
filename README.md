@@ -1,32 +1,31 @@
 <div align="center">
 
-### Third-year Big Data & Cloud Computing student who builds things that break AI models, then fixes them — deepfake detectors, adversarial image cloaks, and inflation forecasting pipelines that actually ship.
+### Turn small ideas into shipped projects — currently deep in Python, cybersecurity, AI integration, and cloud, breaking things on purpose to learn how they work.
 
 <a href="https://github.com/DhanushPillay">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=ML+Systems+%2B+Cloud+Infrastructure;Adversarial+ML+%26+Security+Research;Time-Series+Forecasting+on+Real+Data;Deepfake+%26+Misinformation+Detection" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Python+%2B+Cloud+%2B+AI+Integration;Cybersecurity+%26+Adversarial+ML;Building%2C+Breaking%2C+Rebuilding;Always+Coding%2C+Always+Growing" alt="Typing SVG" />
 </a>
 
 </div>
 
 <br>
 
-**Languages:** 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+**Languages & Core:** 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
-**Frameworks & ML:** 
+**Backend & Cloud:** 
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-337AB7?style=for-the-badge&logo=xgboost&logoColor=white)
+![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
-**Infra & Tools:** 
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
+**Data & ML:** 
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
 <br>
 
@@ -41,8 +40,8 @@
 
 **Notable builds:**
 
-- 🕵️ **[VisioNova](https://github.com/DhanushPillay/VisioNova)** — Multi-modal AI-generated content detector: ViT + SigLIP + CLIP ensemble for images, DeBERTa-v3 + RoBERTa for text
-- 🛡️ **[PixelCloak](https://github.com/DhanushPillay/PixelCloak)** — CLIP-driven PGD adversarial perturbation tool that cloaks images against AI scrapers, served via FastAPI
+- 🕵️ **[VisioNova](https://github.com/DhanushPillay/VisioNova)** — Multi-modal AI-generated content detector: ViT + SigLIP + CLIP for images, DeBERTa-v3 + RoBERTa for text
+- 🛡️ **[PixelCloak](https://github.com/DhanushPillay/PixelCloak)** — CLIP-driven PGD adversarial perturbation tool that cloaks images against AI scrapers
 - 🧠 **[Omnidex](https://github.com/DhanushPillay/Omnidex)** — Self-learning Pokémon chatbot
 
 <sub>[LinkedIn](https://linkedin.com/in/dhanush-pillay-008a47271) · dhanushpillay28@gmail.com</sub>
