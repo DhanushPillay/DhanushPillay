@@ -1,4 +1,5 @@
 <div align="center">
+  
 # About Me:
 I'm Dhanush Pillay, who loves turning small ideas into real projects.<br>I explore Python, cybersecurity, AI integration, web development and cloud while learning something new every day.<br><br>I like experimenting, breaking things, fixing them and getting a little better with every build.<br><br>Always curious. Always coding. Always growing.<br><br>
 # Socials:
@@ -32,4 +33,5 @@ I'm Dhanush Pillay, who loves turning small ideas into real projects.<br>I explo
 ![](https://nirzak-streak-stats.vercel.app/?user=DhanushPillay&theme=neon&hide_border=true)<br/>
 # Contributions:
 ![2026 Snake Dark](https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/github-snake-dark-2026.svg)
+
 </div>
