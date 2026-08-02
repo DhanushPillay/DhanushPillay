@@ -50,12 +50,6 @@ I build cloud infrastructure, data pipelines, and intelligent AI systems. Curren
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=DhanushPillay&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=DhanushPillay&show_icons=true&theme=default&hide_border=true&bg_color=ffffff">
-    <img src="https://github-readme-stats.vercel.app/api?username=DhanushPillay&show_icons=true&theme=default&hide_border=true" alt="GitHub Stats" />
-  </picture>
-  &nbsp;
-  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=DhanushPillay&theme=dark&hide_border=true&background=0d1117">
     <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=DhanushPillay&theme=default&hide_border=true&background=ffffff">
     <img src="https://streak-stats.demolab.com/?user=DhanushPillay&theme=default&hide_border=true" alt="GitHub Streak" />
