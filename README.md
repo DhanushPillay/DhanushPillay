@@ -1,19 +1,57 @@
 <div align="center">
+  <h1>Dhanush Pillay</h1>
+  <h3>Big Data & Cloud Engineering Student | AI/ML & Full-Stack</h3>
   
-# About Me:
-I'm Dhanush Pillay, who loves turning small ideas into real projects.<br>I explore Python, cybersecurity, AI integration, web development and cloud while learning something new every day.<br><br>I like experimenting, breaking things, fixing them and getting a little better with every build.<br><br>Always curious. Always coding. Always growing.<br><br>
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/dhanush-pillay-008a47271) 
+  [![Credly](https://img.shields.io/badge/Credly-%23FF9900.svg?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/dhanush-pillay)
+  [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DhanushPillay)
+  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhanushpillay28@gmail.com) 
+</div>
 
-# Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/dhanush-pillay-008a47271) 
-[![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:dhanushpillay28@gmail.com) 
+---
 
-# Tech Stack:
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)![AmazonDynamoDB](https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge&logo=Amazon%20DynamoDB&logoColor=white)![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)![Cisco](https://img.shields.io/badge/cisco-%23049fd9.svg?style=for-the-badge&logo=cisco&logoColor=black)![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white)![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
+### <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/4.gif" width="30" /> Professional Summary
+I build cloud infrastructure, data pipelines, and intelligent AI systems. Currently pursuing a **B.Tech in CSE (Big Data & Cloud)** at MIT ADT University, with hands-on experience in Google Cloud, PyTorch, and building multi-modal AI detection engines.
 
-# GitHub Stats:
-![](https://nirzak-streak-stats.vercel.app/?user=DhanushPillay&theme=neon&hide_border=true)<br/>
+---
 
-# Contributions:
-![2026 Snake Dark](https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/github-snake-dark-2026.svg)
+### 🏆 Experience & Top Projects
 
+* **[VaticMacro](https://github.com/DhanushPillay/VaticMacro)** - *ML Engineer* <br>
+  An inflation forecasting system ingesting 7 macroeconomic indicators (CPI, WPI, etc.) to predict India’s YoY inflation. Engineered a 35-feature pipeline and Flask dashboard for predictive analytics.
+* **[LifeLink](https://github.com/DhanushPillay/LifeLink)** - *Full-Stack Developer* <br>
+  A Blood and Organ Donor Matching platform built with React, Vite, Express, and MongoDB. Features real-time donor search, live presence via SSE, and secure JWT/OAuth authentication.
+* **[Tech News Aggregator](https://github.com/DhanushPillay/Tech-News-Aggregator)** - Flask web app aggregating news from 5 sources with concurrent scraping, NLP enrichment (VADER sentiment), and PWA caching.
+* **[SmartSheti](https://github.com/DhanushPillay/SmartSheti)** - Agricultural decision support platform for farmers with crop recommendations and pest risk analysis.
+* **[PixBooth](https://github.com/DhanushPillay/PixBooth)** - Web photobooth with WebRTC camera access, real-time vintage filters, and a masonry gallery.
+
+**🌟 Open Source Highlights:**
+* **[huggingface/transformers#47587](https://github.com/huggingface/transformers/pull/47587)** - Contributed to the Hugging Face Transformers library.
+
+---
+
+### 🚀 Technical Skills
+
+**AI & Machine Learning**<br>
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-%23FFCC33.svg?style=flat-square&logo=huggingface&logoColor=black) ![Scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white) ![NLTK](https://img.shields.io/badge/NLTK-%233A8929.svg?style=flat-square) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white)
+
+**Cloud & DevOps**<br>
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat-square&logo=google-cloud&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat-square&logo=kubernetes&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat-square&logo=githubactions&logoColor=white)
+
+**Languages & Web**<br>
+![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB) ![Express](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat-square) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat-square&logo=flask&logoColor=white) 
+
+**Databases & Security**<br>
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat-square&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-%23000000.svg?style=flat-square&logo=JSON%20web%20tokens&logoColor=white) ![OAuth](https://img.shields.io/badge/OAuth-%23000000.svg?style=flat-square)
+
+---
+
+### <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" width="35" /> Pikachu Contribution Grid
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/dist/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/dist/github-snake.svg">
+    <img src="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/dist/github-snake.svg" alt="Pikachu Snake Animation" />
+  </picture>
 </div>
