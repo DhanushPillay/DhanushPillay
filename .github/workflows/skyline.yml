@@ -1,0 +1,20 @@
+name: 3D GitHub Skyline
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate 3D Skyline
+        uses: lowlighter/metrics@latest
+        with:
+          filename: skyline.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_skyline: yes
+          plugin_skyline_year: current-year
+          plugin_skyline_frames: 60
+          plugin_skyline_quality: 1

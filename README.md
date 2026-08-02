@@ -58,10 +58,8 @@ I build cloud infrastructure, data pipelines, and intelligent AI systems. Curren
 
 <br/>
 
+### 🏙️ 3D Contribution Skyline
+
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/github-snake.svg">
-    <img src="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/github-snake.svg" alt="Contribution Grid Animation" />
-  </picture>
+  <img src="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/main/skyline.svg" alt="3D Animated Contribution Skyline" width="800" />
 </div>
