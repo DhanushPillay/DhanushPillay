@@ -32,19 +32,27 @@ I build cloud infrastructure, data pipelines, and intelligent AI systems. Curren
 
 ### 🚀 Technical Skills
 
-**AI & Machine Learning**<br>
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-%23FFCC33.svg?style=flat-square&logo=huggingface&logoColor=black) ![Scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white) ![NLTK](https://img.shields.io/badge/NLTK-%233A8929.svg?style=flat-square) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white)
+**AI & Machine Learning** ⚡ (Electric Type)<br>
+![PyTorch](https://img.shields.io/badge/PyTorch-%23F7D02C.svg?style=flat-square&logo=PyTorch&logoColor=black) ![Transformers](https://img.shields.io/badge/Transformers-%23F7D02C.svg?style=flat-square&logo=huggingface&logoColor=black) ![Scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7D02C.svg?style=flat-square&logo=scikit-learn&logoColor=black) ![NLTK](https://img.shields.io/badge/NLTK-%23F7D02C.svg?style=flat-square&logoColor=black) ![Pandas](https://img.shields.io/badge/pandas-%23F7D02C.svg?style=flat-square&logo=pandas&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23F7D02C.svg?style=flat-square&logo=numpy&logoColor=black)
 
-**Cloud & DevOps**<br>
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat-square&logo=google-cloud&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat-square&logo=kubernetes&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat-square&logo=githubactions&logoColor=white)
+**Cloud & DevOps** 🔥 (Fire Type)<br>
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%23EE8130.svg?style=flat-square&logo=google-cloud&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23EE8130.svg?style=flat-square&logo=amazon-aws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23EE8130.svg?style=flat-square&logo=kubernetes&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%23EE8130.svg?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%23EE8130.svg?style=flat-square&logo=githubactions&logoColor=white)
 
-**Languages & Web**<br>
-![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB) ![Express](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat-square) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat-square&logo=flask&logoColor=white) 
+**Languages & Web** 💧 (Water Type)<br>
+![Python](https://img.shields.io/badge/python-%236390F0.svg?style=flat-square&logo=python&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%236390F0.svg?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%236390F0.svg?style=flat-square&logo=css3&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-%236390F0.svg?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-%236390F0.svg?style=flat-square&logo=react&logoColor=white) ![Express](https://img.shields.io/badge/Express.js-%236390F0.svg?style=flat-square&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%236390F0.svg?style=flat-square&logo=flask&logoColor=white) 
 
-**Databases & Security**<br>
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat-square&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-%23000000.svg?style=flat-square&logo=JSON%20web%20tokens&logoColor=white) ![OAuth](https://img.shields.io/badge/OAuth-%23000000.svg?style=flat-square)
+**Databases & Security** 🪨 (Rock Type)<br>
+![MongoDB](https://img.shields.io/badge/MongoDB-%23B6A136.svg?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%23B6A136.svg?style=flat-square&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-%23B6A136.svg?style=flat-square&logo=sqlite&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-%23B6A136.svg?style=flat-square&logo=JSON%20web%20tokens&logoColor=white) ![OAuth](https://img.shields.io/badge/OAuth-%23B6A136.svg?style=flat-square&logoColor=white)
 
 ---
+
+### 📈 GitHub Analytics
+
+<div align="center">
+  <img src="https://profile-card-ten-green.vercel.app/api/card?username=DhanushPillay&type=electric" alt="Pokemon Stats Card" width="400" />
+</div>
+
+<br/>
 
 ### <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" width="35" /> Pikachu Contribution Grid
 
