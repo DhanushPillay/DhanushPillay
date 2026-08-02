@@ -50,8 +50,8 @@ I build cloud infrastructure, data pipelines, and intelligent AI systems. Curren
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/dist/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/dist/github-snake.svg">
-    <img src="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/dist/github-snake.svg" alt="Pikachu Snake Animation" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/github-snake.svg">
+    <img src="https://raw.githubusercontent.com/DhanushPillay/DhanushPillay/output/github-snake.svg" alt="Pikachu Snake Animation" />
   </picture>
 </div>
