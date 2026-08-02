@@ -10,27 +10,17 @@
 
 ---
 
-### 👨‍💻 Quick Intro
-- 🎓 **Studying:** B.Tech in CSE (Big Data & Cloud) at MIT ADT University.
-- 💡 **Focus:** Cloud Infrastructure, Data Pipelines, and Machine Learning systems.
-- 🚀 **Currently Building:** Full-stack and multi-modal AI detection engines.
-- 🤝 **Open Source:** Contributor to the [Hugging Face Transformers](https://github.com/huggingface/transformers/pull/47587) library.
+I'm currently studying Big Data & Cloud Engineering at MIT ADT University. I spend most of my time working with cloud infrastructure, data pipelines, and machine learning models. Right now, I'm focused on building full-stack platforms and multi-modal AI detection engines, while also actively contributing to open-source projects like the Hugging Face Transformers library.
 
 ---
 
 ### 🚀 Technical Arsenal
 
-**AI & Machine Learning**<br>
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-%23FFCC33.svg?style=flat-square&logo=huggingface&logoColor=black) ![Scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white) ![NLTK](https://img.shields.io/badge/NLTK-%233A8929.svg?style=flat-square) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white)
-
-**Cloud & DevOps**<br>
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat-square&logo=google-cloud&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=flat-square&logo=kubernetes&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat-square&logo=githubactions&logoColor=white)
-
-**Languages & Web**<br>
-![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) ![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB) ![Express](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat-square) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat-square&logo=flask&logoColor=white) 
-
-**Databases & Security**<br>
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat-square&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white) ![JWT](https://img.shields.io/badge/JWT-%23000000.svg?style=flat-square&logo=JSON%20web%20tokens&logoColor=white) ![OAuth](https://img.shields.io/badge/OAuth-%23000000.svg?style=flat-square)
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=py,js,ts,html,css,react,nodejs,express,flask,mongodb,mysql,sqlite,aws,gcp,kubernetes,docker,pytorch,scikitlearn,githubactions&theme=dark&perline=10" />
+  </a>
+</div>
 
 ---
 
