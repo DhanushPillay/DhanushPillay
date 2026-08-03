@@ -18,7 +18,7 @@ I'm currently studying Big Data & Cloud Engineering at MIT ADT University. I spe
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,js,ts,html,css,react,nodejs,express,flask,mongodb,mysql,sqlite,aws,gcp,kubernetes,docker,pytorch,scikitlearn,githubactions,rust,nextjs,tailwindcss,neo4j&theme=dark&perline=10" />
+    <img src="https://skillicons.dev/icons?i=py,js,ts,html,css,react,nodejs,express,flask,mongodb,mysql,sqlite,aws,gcp,kubernetes,docker,pytorch,scikitlearn,githubactions,rust,nextjs,tailwindcss&theme=dark&perline=10" />
   </a>
 </div>
 
