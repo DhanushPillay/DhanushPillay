@@ -34,3 +34,13 @@ I'm currently studying Big Data & Cloud Engineering at MIT ADT University. I spe
 | **[SmartSheti](https://github.com/DhanushPillay/SmartSheti)** | Agricultural decision support app providing localized crop recommendations. | `Machine Learning`, `API` |
 | **[PixBooth](https://github.com/DhanushPillay/PixBooth)** | WebRTC photobooth featuring real-time vintage filters and masonry layout. | `JavaScript`, `WebRTC` |
 
+---
+
+### Open Source Contributions
+
+| Project | Description | Status |
+|---------|-------------|--------|
+| **[huggingface/transformers](https://github.com/huggingface/transformers/pull/47701)** | Clean up reverse_op fixme in compressed_tensors | Merged |
+| **[huggingface/transformers](https://github.com/huggingface/transformers/pull/47587)** | Fix npu check | Merged |
+| **[deepset-ai/haystack](https://github.com/deepset-ai/haystack/commit/f4ba8d113709b7be339fc5de7a11b71be9c590ab)** | Modernize generator tests | Merged |
+
