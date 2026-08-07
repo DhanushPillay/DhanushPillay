@@ -15,30 +15,32 @@ Big Data & Cloud Engineering student at MIT ADT University. I work with cloud in
 
 ---
 
-### Technical Arsenal
+<h2 align="center">Tᴇᴄʜ ᴀʀsᴇɴᴀʟ & Oᴘᴇɴ Sᴏᴜʀᴄᴇ</h2>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="tech-stack-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="tech-stack-light.svg">
-  <img align="center" alt="Tech Stack" src="tech-stack-dark.svg">
+  <img align="left" alt="Tech Stack" src="tech-stack-dark.svg" width="45%" style="padding-right: 20px;">
 </picture>
 
----
+<h3 align="left">Current Focus</h3>
+<ul align="left">
+  <li>Building full-stack platforms and multi-modal AI detection engines.</li>
+  <li>Working with cloud infrastructure and data pipelines.</li>
+  <li>Contributing to major open-source machine learning repositories.</li>
+</ul>
 
-### Open Source
-
-#### huggingface/transformers
-
-| PR | Fix |
-|----|-----|
-| [#47701](https://github.com/huggingface/transformers/pull/47701) | `reverse_op` was returning `None` in `compressed_tensors.py`, fixed by returning `_IdentityOp()` |
-| [#47587](https://github.com/huggingface/transformers/pull/47587) | NPU detection in `testing_utils.py` only checked `hasattr`, now uses `torch.npu.is_available()` and drops redundant imports |
-
-#### deepset-ai/haystack
-
-| Commit | Fix |
-|--------|-----|
-| [f4ba8d1](https://github.com/deepset-ai/haystack/commit/f4ba8d113709b7be339fc5de7a11b71be9c590ab) | Cleaned up generator tests across 13 files, added type hints and wired them into mypy |
+<h3 align="left">Open Source Highlights</h3>
+<ul align="left">
+  <li><b>huggingface/transformers:</b> Fixed <code>reverse_op</code> bug in <code>compressed_tensors.py</code> <a href="https://github.com/huggingface/transformers/pull/47701">(#47701)</a></li>
+  <li><b>huggingface/transformers:</b> Improved NPU detection in <code>testing_utils.py</code> <a href="https://github.com/huggingface/transformers/pull/47587">(#47587)</a></li>
+  <li><b>deepset-ai/haystack:</b> Cleaned up generator tests & added type hints <a href="https://github.com/deepset-ai/haystack/commit/f4ba8d113709b7be339fc5de7a11b71be9c590ab">(Commit)</a></li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
 
 ---
 
