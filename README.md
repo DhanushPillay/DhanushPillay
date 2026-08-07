@@ -30,14 +30,14 @@ I'm currently studying Big Data & Cloud Engineering at MIT ADT University. I spe
 
 | PR | Fix |
 |----|-----|
-| [#47701](https://github.com/huggingface/transformers/pull/47701) | Clean up `reverse_op` fixme in `compressed_tensors` |
-| [#47587](https://github.com/huggingface/transformers/pull/47587) | Fix NPU check in `testing_utils.py` |
+| [#47701](https://github.com/huggingface/transformers/pull/47701) | Fixed `reverse_op` returning `None` in `compressed_tensors.py` — replaced with `_IdentityOp()` |
+| [#47587](https://github.com/huggingface/transformers/pull/47587) | Fixed NPU device detection in `testing_utils.py` — updated to use `torch.npu.is_available()` and removed redundant imports |
 
 #### deepset-ai/haystack
 
 | Commit | Fix |
 |--------|-----|
-| [f4ba8d1](https://github.com/deepset-ai/haystack/commit/f4ba8d113709b7be339fc5de7a11b71be9c590ab) | Modernize generator tests |
+| [f4ba8d1](https://github.com/deepset-ai/haystack/commit/f4ba8d113709b7be339fc5de7a11b71be9c590ab) | Modernized generator test suite across 13 files — added type annotations and included generators in mypy checks |
 
 ---
 
