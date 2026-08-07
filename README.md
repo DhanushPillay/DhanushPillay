@@ -5,22 +5,23 @@
   [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/dhanush-pillay-008a47271) 
   [![Credly](https://img.shields.io/badge/Credly-%23FF9900.svg?style=for-the-badge&logo=credly&logoColor=white)](https://www.credly.com/users/dhanush-pillay)
   [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DhanushPillay)
-  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhanushpillay28@gmail.com) 
+  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dhanushpillay28@gmail.com)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://dhanush-personal-portfolio-three.vercel.app/) 
 </div>
 
 ---
 
-I'm currently studying Big Data & Cloud Engineering at MIT ADT University. I spend most of my time working with cloud infrastructure, data pipelines, and machine learning models. Right now, I'm focused on building full-stack platforms and multi-modal AI detection engines, while also actively contributing to open-source projects like the Hugging Face Transformers library.
+Big Data & Cloud Engineering student at MIT ADT University. I work with cloud infrastructure, data pipelines, and machine learning models. Currently building full-stack platforms and multi-modal AI detection engines. 3 PRs merged to Hugging Face Transformers and Haystack.
 
 ---
 
 ### Technical Arsenal
 
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=py,js,ts,html,css,react,nodejs,express,flask,mongodb,mysql,sqlite,aws,gcp,kubernetes,docker,pytorch,scikitlearn,githubactions,rust,nextjs,tailwindcss&theme=dark&perline=10" />
-  </a>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="tech-stack-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="tech-stack-light.svg">
+  <img align="center" alt="Tech Stack" src="tech-stack-dark.svg">
+</picture>
 
 ---
 
