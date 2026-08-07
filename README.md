@@ -17,11 +17,8 @@ Big Data & Cloud Engineering student at MIT ADT University. I work with cloud in
 
 <h2 align="center">Tᴇᴄʜ ᴀʀsᴇɴᴀʟ & Oᴘᴇɴ Sᴏᴜʀᴄᴇ</h2>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="tech-stack-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="tech-stack-light.svg">
-  <img align="left" alt="Tech Stack" src="tech-stack-dark.svg" width="45%" style="padding-right: 20px;">
-</picture>
+<img align="left" src="tech-stack-light.svg#gh-light-mode-only" alt="Tech Stack" width="380" hspace="20">
+<img align="left" src="tech-stack-dark.svg#gh-dark-mode-only" alt="Tech Stack" width="380" hspace="20">
 
 <h3 align="left">Current Focus</h3>
 <ul align="left">
@@ -36,9 +33,7 @@ Big Data & Cloud Engineering student at MIT ADT University. I work with cloud in
   <li><b>huggingface/transformers:</b> Improved NPU detection in <code>testing_utils.py</code> <a href="https://github.com/huggingface/transformers/pull/47587">(#47587)</a></li>
   <li><b>deepset-ai/haystack:</b> Cleaned up generator tests & added type hints <a href="https://github.com/deepset-ai/haystack/commit/f4ba8d113709b7be339fc5de7a11b71be9c590ab">(Commit)</a></li>
 </ul>
-<br />
-<br />
-<br />
+<div style="clear: both;"></div>
 <br />
 <br />
 
