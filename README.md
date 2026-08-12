@@ -86,7 +86,11 @@ class DhanushPillay:
     <td width="90%" valign="top">
       <strong><a href="https://github.com/DhanushPillay/VaticMacro">VaticMacro</a></strong><br>
       <em>ML engine predicting India's YoY inflation using macroeconomic indicators.</em><br><br>
-      <img src="https://skillicons.dev/icons?i=py,flask,sklearn&theme=dark" height="28" />
+      <img src="https://api.iconify.design/logos:pandas.svg" height="28" />
+      <img src="https://api.iconify.design/logos:numpy.svg" height="28" />
+      <img src="https://api.iconify.design/logos:matplotlib-icon.svg" height="28" />
+      <img src="https://api.iconify.design/logos:jupyter.svg" height="28" />
+      <img src="https://skillicons.dev/icons?i=py,flask,sklearn,docker&theme=dark" height="28" />
     </td>
   </tr>
   <tr>
@@ -96,17 +100,17 @@ class DhanushPillay:
     <td width="90%" valign="top">
       <strong><a href="https://github.com/DhanushPillay/LifeLink">LifeLink</a></strong><br>
       <em>Live blood & organ donor matching with real-time presence and notifications.</em><br><br>
-      <img src="https://skillicons.dev/icons?i=react,express,mongodb&theme=dark" height="28" />
+      <img src="https://skillicons.dev/icons?i=react,vite,tailwind,express,nodejs,mongodb,chartjs,leaflet&theme=dark" height="28" />
     </td>
   </tr>
   <tr>
     <td width="10%" align="center" valign="middle">
-      <a href="https://github.com/DhanushPillay/Tech-News-Aggregator"><img src="https://api.iconify.design/flat-color-icons:news.svg" width="60" alt="Tech News" /></a>
+      <a href="https://github.com/DhanushPillay/Web-scraper"><img src="https://api.iconify.design/flat-color-icons:news.svg" width="60" alt="Tech News" /></a>
     </td>
     <td width="90%" valign="top">
-      <strong><a href="https://github.com/DhanushPillay/Tech-News-Aggregator">Tech News Aggregator</a></strong><br>
+      <strong><a href="https://github.com/DhanushPillay/Web-scraper">Tech News Aggregator</a></strong><br>
       <em>Concurrent news scraper with NLP sentiment analysis and PWA caching.</em><br><br>
-      <img src="https://skillicons.dev/icons?i=py,flask,vite&theme=dark" height="28" />
+      <img src="https://skillicons.dev/icons?i=py,flask&theme=dark" height="28" />
     </td>
   </tr>
 </table>
