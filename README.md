@@ -78,21 +78,21 @@ class DhanushPillay:
 <br>
 
 ### Featured Projects
-> **[📈 VaticMacro](https://github.com/DhanushPillay/VaticMacro)** <br>
+> **[<img src="https://api.iconify.design/lucide:trending-up.svg?color=%2336BCF7" width="22" align="center" /> VaticMacro](https://github.com/DhanushPillay/VaticMacro)** <br>
 > ML engine predicting India's YoY inflation using macroeconomic indicators. <br>
 > <br>
 > <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
 
 <br>
 
-> **[🩸 LifeLink](https://github.com/DhanushPillay/LifeLink)** <br>
+> **[<img src="https://api.iconify.design/lucide:droplet.svg?color=%23EA4335" width="22" align="center" /> LifeLink](https://github.com/DhanushPillay/LifeLink)** <br>
 > Live blood & organ donor matching with real-time presence and notifications. <br>
 > <br>
 > <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
 
 <br>
 
-> **[📰 Tech News Aggregator](https://github.com/DhanushPillay/Tech-News-Aggregator)** <br>
+> **[<img src="https://api.iconify.design/lucide:newspaper.svg?color=%23FFD21E" width="22" align="center" /> Tech News Aggregator](https://github.com/DhanushPillay/Tech-News-Aggregator)** <br>
 > Concurrent news scraper with NLP sentiment analysis and PWA caching. <br>
 > <br>
 > <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/NLP-36BCF7?style=for-the-badge" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
