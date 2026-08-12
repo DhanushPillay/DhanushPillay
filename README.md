@@ -80,16 +80,14 @@ class DhanushPillay:
 ### Featured Projects
 <table width="100%">
   <tr>
-    <td width="100%" valign="top">
+    <td width="50%" valign="top">
       <strong><a href="https://github.com/DhanushPillay/VaticMacro">📈 VaticMacro</a></strong>
       <br><em>ML engine predicting India's YoY inflation using macroeconomic indicators.</em><br><br>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
       <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
     </td>
-  </tr>
-  <tr>
-    <td width="100%" valign="top">
+    <td width="50%" valign="top">
       <strong><a href="https://github.com/DhanushPillay/LifeLink">🩸 LifeLink</a></strong>
       <br><em>Live blood & organ donor matching with real-time presence and notifications.</em><br><br>
       <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
@@ -98,7 +96,7 @@ class DhanushPillay:
     </td>
   </tr>
   <tr>
-    <td width="100%" valign="top">
+    <td colspan="2" valign="top">
       <strong><a href="https://github.com/DhanushPillay/Tech-News-Aggregator">📰 Tech News Aggregator</a></strong>
       <br><em>Concurrent news scraper with NLP sentiment analysis and PWA caching.</em><br><br>
       <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
