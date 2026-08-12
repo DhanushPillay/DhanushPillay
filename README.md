@@ -37,7 +37,7 @@ class DhanushPillay:
 
 ### Tech Arsenal
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=py,js,ts,java,cpp&theme=dark" alt="Languages" /><br><br>
+  <img src="https://skillicons.dev/icons?i=py,js,ts,java&theme=dark" alt="Languages" /><br><br>
   <img src="https://skillicons.dev/icons?i=react,next,flask,express,nodejs,tailwind&theme=dark" alt="Frameworks" /><br><br>
   <img src="https://skillicons.dev/icons?i=gcp,aws,docker,kubernetes,postgres,mongo,redis&theme=dark" alt="Cloud & DB" /><br><br>
   <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,scikit&theme=dark" alt="ML" />
