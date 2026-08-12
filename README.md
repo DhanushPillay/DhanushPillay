@@ -45,7 +45,7 @@ class DhanushPillay:
 
 <br>
 
-### Open Source Highlights
+### Open Source Contribution
 <table width="100%">
   <tr>
     <td width="10%" align="center" valign="middle">
