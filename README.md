@@ -48,20 +48,28 @@ class DhanushPillay:
 ### Open Source Highlights
 <table width="100%">
   <tr>
-    <td valign="top" width="50%">
-      <strong><a href="https://github.com/huggingface/transformers">🤗 huggingface/transformers</a></strong>
-      <p style="margin:0.25rem 0 0.5rem 0">State-of-the-art Machine Learning for PyTorch, TensorFlow, and JAX.</p>
-      <ul style="margin:0">
-        <li>Fixed <code>reverse_op</code> bug in <code>compressed_tensors.py</code> <a href="https://github.com/huggingface/transformers/pull/47701">(#47701)</a></li>
-        <li>Improved NPU detection in <code>testing_utils.py</code> <a href="https://github.com/huggingface/transformers/pull/47587">(#47587)</a></li>
+    <td width="10%" align="center" valign="middle">
+      <a href="https://github.com/huggingface"><img src="https://github.com/huggingface.png" width="60" alt="Hugging Face" /></a>
+    </td>
+    <td width="90%" valign="top">
+      <strong><a href="https://github.com/huggingface/transformers">huggingface/transformers</a></strong> (130k+ ⭐)
+      <br><em>Core contributor to the industry-standard NLP library. Enhanced model inference and hardware support.</em><br><br>
+      <ul>
+        <li>Resolved a critical bug in <code>compressed_tensors.py</code> to ensure stable tensor operations <a href="https://github.com/huggingface/transformers/pull/47701">(#47701)</a></li>
+        <li>Improved NPU (Neural Processing Unit) detection logic in testing suites for hardware compatibility <a href="https://github.com/huggingface/transformers/pull/47587">(#47587)</a></li>
       </ul>
     </td>
-    <td valign="top" width="50%">
-      <strong><a href="https://github.com/deepset-ai/haystack">🔍 deepset-ai/haystack</a></strong>
-      <p style="margin:0.25rem 0 0.5rem 0">Open source NLP framework for building LLM applications.</p>
-      <ul style="margin:0">
-        <li>Added <code>link_format</code> to PyPDFToDocument <a href="https://github.com/deepset-ai/haystack/pull/12273">(#12273)</a></li>
-        <li>Modernized generator tests <a href="https://github.com/deepset-ai/haystack/pull/12216">(#12216)</a></li>
+  </tr>
+  <tr>
+    <td width="10%" align="center" valign="middle">
+      <a href="https://github.com/deepset-ai"><img src="https://github.com/deepset-ai.png" width="60" alt="Deepset" /></a>
+    </td>
+    <td width="90%" valign="top">
+      <strong><a href="https://github.com/deepset-ai/haystack">deepset-ai/haystack</a></strong> (16k+ ⭐)
+      <br><em>Impactful additions to the leading enterprise framework for building LLM and RAG pipelines.</em><br><br>
+      <ul>
+        <li>Implemented <code>link_format</code> feature in PDF extraction modules to improve document parsing for RAG <a href="https://github.com/deepset-ai/haystack/pull/12273">(#12273)</a></li>
+        <li>Modernized generator components by fully adopting strict <code>mypy</code> type hints for zero-error CI checks <a href="https://github.com/deepset-ai/haystack/pull/12216">(#12216)</a></li>
       </ul>
     </td>
   </tr>
