@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 460" width="850" height="460">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#050709" />
+    </linearGradient>
+
+    <!-- Card Glow Gradients -->
+    <linearGradient id="borderGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#58a6ff;#33b3ae;#58a6ff" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#1f242c" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff7b72" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#ff7b72;#d2a8ff;#ff7b72" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#1f242c" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7ee787" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#7ee787;#36bc98;#7ee787" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#1f242c" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .card-bg { fill: #0d1117; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; font-size: 22px; fill: #e6edf3; }
+    .desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 400; font-size: 14px; fill: #848d97; }
+    .badge { fill: #21262d; rx: 12; stroke: #30363d; stroke-width: 1; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 11px; fill: #c9d1d9; }
+    
+    /* Hover effects for SVG if supported */
+    .card-group:hover .card-bg { fill: #161b22; }
+    .card-group { cursor: pointer; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)" />
+
+  <!-- Background Orbs / Glows -->
+  <circle cx="200" cy="200" r="180" fill="#58a6ff" opacity="0.05" filter="blur(60px)" />
+  <circle cx="650" cy="100" r="150" fill="#ff7b72" opacity="0.05" filter="blur(60px)" />
+  <circle cx="650" cy="350" r="150" fill="#7ee787" opacity="0.05" filter="blur(60px)" />
+
+  <!-- =============================== -->
+  <!-- CARD 1: VaticMacro (Left, Large) -->
+  <!-- =============================== -->
+  <g class="card-group" transform="translate(20, 20)">
+    <!-- Animated Border Rect (slightly larger, behind) -->
+    <rect width="390" height="420" rx="16" fill="url(#borderGrad1)" />
+    <!-- Main Card Body -->
+    <rect x="2" y="2" width="386" height="416" rx="14" class="card-bg" />
+    
+    <!-- Icon Placeholder -->
+    <rect x="30" y="30" width="50" height="50" rx="12" fill="#161b22" stroke="#30363d" />
+    <path d="M45 65 L55 55 L65 60 L75 45" stroke="#58a6ff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="75" cy="45" r="3" fill="#58a6ff"/>
+
+    <text x="30" y="115" class="title">VaticMacro</text>
+    
+    <text x="30" y="145" class="desc">
+      <tspan x="30" dy="0">Advanced ML framework forecasting</tspan>
+      <tspan x="30" dy="22">India's inflation trends by analyzing</tspan>
+      <tspan x="30" dy="22">macroeconomic indicators — CPI,</tspan>
+      <tspan x="30" dy="22">WPI, GDP, RBI benchmark rates,</tspan>
+      <tspan x="30" dy="22">USD/INR, and Brent Crude.</tspan>
+    </text>
+
+    <!-- Badges Row 1 -->
+    <g transform="translate(30, 280)">
+      <rect width="65" height="24" class="badge" />
+      <text x="12" y="16" class="badge-text">Python</text>
+
+      <rect x="75" width="55" height="24" class="badge" />
+      <text x="87" y="16" class="badge-text">Flask</text>
+
+      <rect x="140" width="90" height="24" class="badge" />
+      <text x="152" y="16" class="badge-text">Scikit-learn</text>
+    </g>
+
+    <!-- Badges Row 2 -->
+    <g transform="translate(30, 315)">
+      <rect width="75" height="24" class="badge" />
+      <text x="12" y="16" class="badge-text">XGBoost</text>
+
+      <rect x="85" width="65" height="24" class="badge" />
+      <text x="97" y="16" class="badge-text">Pandas</text>
+
+      <rect x="160" width="65" height="24" class="badge" />
+      <text x="172" y="16" class="badge-text">Docker</text>
+    </g>
+  </g>
+
+  <!-- =============================== -->
+  <!-- CARD 2: LifeLink (Top Right)    -->
+  <!-- =============================== -->
+  <g class="card-group" transform="translate(430, 20)">
+    <rect width="400" height="200" rx="16" fill="url(#borderGrad2)" />
+    <rect x="2" y="2" width="396" height="196" rx="14" class="card-bg" />
+    
+    <text x="25" y="45" class="title">LifeLink</text>
+    
+    <text x="25" y="75" class="desc">
+      <tspan x="25" dy="0">Web-based blood and organ donor</tspan>
+      <tspan x="25" dy="22">management platform enabling</tspan>
+      <tspan x="25" dy="22">real-time medical donor matching.</tspan>
+    </text>
+
+    <!-- Badges -->
+    <g transform="translate(25, 150)">
+      <rect width="60" height="24" class="badge" />
+      <text x="12" y="16" class="badge-text">React</text>
+
+      <rect x="70" width="50" height="24" class="badge" />
+      <text x="82" y="16" class="badge-text">Vite</text>
+
+      <rect x="130" width="70" height="24" class="badge" />
+      <text x="142" y="16" class="badge-text">Node.js</text>
+
+      <rect x="210" width="80" height="24" class="badge" />
+      <text x="222" y="16" class="badge-text">MongoDB</text>
+    </g>
+  </g>
+
+  <!-- =============================== -->
+  <!-- CARD 3: Tech News (Bot Right)   -->
+  <!-- =============================== -->
+  <g class="card-group" transform="translate(430, 240)">
+    <rect width="400" height="200" rx="16" fill="url(#borderGrad3)" />
+    <rect x="2" y="2" width="396" height="196" rx="14" class="card-bg" />
+    
+    <text x="25" y="45" class="title">Tech News Aggregator</text>
+    
+    <text x="25" y="75" class="desc">
+      <tspan x="25" dy="0">Flask-based PWA aggregating tech</tspan>
+      <tspan x="25" dy="22">stories from 5 sources with concurrent</tspan>
+      <tspan x="25" dy="22">scraping and NLP sentiment analysis.</tspan>
+    </text>
+
+    <!-- Badges -->
+    <g transform="translate(25, 150)">
+      <rect width="65" height="24" class="badge" />
+      <text x="12" y="16" class="badge-text">Python</text>
+
+      <rect x="75" width="60" height="24" class="badge" />
+      <text x="87" y="16" class="badge-text">Flask</text>
+
+      <rect x="145" width="65" height="24" class="badge" />
+      <text x="157" y="16" class="badge-text">SQLite</text>
+
+      <rect x="220" width="55" height="24" class="badge" />
+      <text x="232" y="16" class="badge-text">NLTK</text>
+    </g>
+  </g>
+</svg>
