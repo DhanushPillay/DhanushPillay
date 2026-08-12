@@ -46,10 +46,26 @@ class DhanushPillay:
 <br>
 
 ### Open Source Highlights
-| Repository | Description | Contribution |
-| :--- | :--- | :--- |
-| **[`huggingface/transformers`](https://github.com/huggingface/transformers)** | State-of-the-art Machine Learning for PyTorch, TensorFlow, and JAX. | Fixed `reverse_op` bug in `compressed_tensors.py` [(#47701)](https://github.com/huggingface/transformers/pull/47701) <br> Improved NPU detection in `testing_utils.py` [(#47587)](https://github.com/huggingface/transformers/pull/47587) |
-| **[`deepset-ai/haystack`](https://github.com/deepset-ai/haystack)** | Open source NLP framework for building LLM applications. | Added `link_format` to PyPDFToDocument [(#12273)](https://github.com/deepset-ai/haystack/pull/12273) <br> Modernized generator tests [(#12216)](https://github.com/deepset-ai/haystack/pull/12216) |
+<table width="100%">
+  <tr>
+    <td valign="top" width="50%">
+      <strong><a href="https://github.com/huggingface/transformers">🤗 huggingface/transformers</a></strong>
+      <p style="margin:0.25rem 0 0.5rem 0">State-of-the-art Machine Learning for PyTorch, TensorFlow, and JAX.</p>
+      <ul style="margin:0">
+        <li>Fixed <code>reverse_op</code> bug in <code>compressed_tensors.py</code> <a href="https://github.com/huggingface/transformers/pull/47701">(#47701)</a></li>
+        <li>Improved NPU detection in <code>testing_utils.py</code> <a href="https://github.com/huggingface/transformers/pull/47587">(#47587)</a></li>
+      </ul>
+    </td>
+    <td valign="top" width="50%">
+      <strong><a href="https://github.com/deepset-ai/haystack">🔍 deepset-ai/haystack</a></strong>
+      <p style="margin:0.25rem 0 0.5rem 0">Open source NLP framework for building LLM applications.</p>
+      <ul style="margin:0">
+        <li>Added <code>link_format</code> to PyPDFToDocument <a href="https://github.com/deepset-ai/haystack/pull/12273">(#12273)</a></li>
+        <li>Modernized generator tests <a href="https://github.com/deepset-ai/haystack/pull/12216">(#12216)</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
 <br>
 
