@@ -78,33 +78,24 @@ class DhanushPillay:
 <br>
 
 ### Featured Projects
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <strong><a href="https://github.com/DhanushPillay/VaticMacro">📈 VaticMacro</a></strong>
-      <br><em>ML engine predicting India's YoY inflation using macroeconomic indicators.</em><br><br>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-      <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
-      <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" />
-    </td>
-    <td width="50%" valign="top">
-      <strong><a href="https://github.com/DhanushPillay/LifeLink">🩸 LifeLink</a></strong>
-      <br><em>Live blood & organ donor matching with real-time presence and notifications.</em><br><br>
-      <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-      <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" />
-      <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" valign="top">
-      <strong><a href="https://github.com/DhanushPillay/Tech-News-Aggregator">📰 Tech News Aggregator</a></strong>
-      <br><em>Concurrent news scraper with NLP sentiment analysis and PWA caching.</em><br><br>
-      <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" />
-      <img src="https://img.shields.io/badge/NLP-36BCF7?style=flat-square" />
-      <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" />
-    </td>
-  </tr>
-</table>
+> **[📈 VaticMacro](https://github.com/DhanushPillay/VaticMacro)** <br>
+> ML engine predicting India's YoY inflation using macroeconomic indicators. <br>
+> <br>
+> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" /> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
+
+<br>
+
+> **[🩸 LifeLink](https://github.com/DhanushPillay/LifeLink)** <br>
+> Live blood & organ donor matching with real-time presence and notifications. <br>
+> <br>
+> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" /> <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+
+<br>
+
+> **[📰 Tech News Aggregator](https://github.com/DhanushPillay/Tech-News-Aggregator)** <br>
+> Concurrent news scraper with NLP sentiment analysis and PWA caching. <br>
+> <br>
+> <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" /> <img src="https://img.shields.io/badge/NLP-36BCF7?style=for-the-badge" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
 
 <div align="center">
   <br>
