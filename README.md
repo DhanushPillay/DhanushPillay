@@ -80,7 +80,7 @@ class DhanushPillay:
 ### Featured Projects
 
 <div align="center">
-  <a href="https://github.com/DhanushPillay?tab=repositories"><img src="./assets/featured-projects.svg" alt="Featured Projects Bento Grid" width="100%" /></a>
+  <a href="https://github.com/DhanushPillay?tab=repositories"><img src="./assets/featured-projects.svg?v=2" alt="Featured Projects Bento Grid" width="100%" /></a>
 </div>
 
 <div align="center">
