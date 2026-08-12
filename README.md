@@ -37,7 +37,7 @@ class DhanushPillay:
 
 ### Tech Arsenal
 <div align="center">
-  <img src="./assets/tech-arsenal-animated.svg?v=3" alt="Tech Arsenal" width="100%" />
+  <img src="./assets/tech-arsenal-animated.svg?v=4" alt="Tech Arsenal" width="100%" />
 </div>
 
 <br>
