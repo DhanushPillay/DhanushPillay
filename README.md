@@ -78,24 +78,38 @@ class DhanushPillay:
 <br>
 
 ### Featured Projects
-> **[<img src="https://api.iconify.design/lucide:trending-up.svg?color=%2336BCF7" width="22" align="center" /> VaticMacro](https://github.com/DhanushPillay/VaticMacro)** <br>
-> ML engine predicting India's YoY inflation using macroeconomic indicators. <br>
-> <br>
-> <img src="https://skillicons.dev/icons?i=py,flask,sklearn&theme=dark" height="32" />
-
-<br>
-
-> **[<img src="https://api.iconify.design/lucide:droplet.svg?color=%23EA4335" width="22" align="center" /> LifeLink](https://github.com/DhanushPillay/LifeLink)** <br>
-> Live blood & organ donor matching with real-time presence and notifications. <br>
-> <br>
-> <img src="https://skillicons.dev/icons?i=react,express,mongodb&theme=dark" height="32" />
-
-<br>
-
-> **[<img src="https://api.iconify.design/lucide:newspaper.svg?color=%23FFD21E" width="22" align="center" /> Tech News Aggregator](https://github.com/DhanushPillay/Tech-News-Aggregator)** <br>
-> Concurrent news scraper with NLP sentiment analysis and PWA caching. <br>
-> <br>
-> <img src="https://skillicons.dev/icons?i=py,flask,vite&theme=dark" height="32" />
+<table width="100%">
+  <tr>
+    <td width="10%" align="center" valign="middle">
+      <a href="https://github.com/DhanushPillay/VaticMacro"><img src="https://api.iconify.design/flat-color-icons:line-chart.svg" width="60" alt="VaticMacro" /></a>
+    </td>
+    <td width="90%" valign="top">
+      <strong><a href="https://github.com/DhanushPillay/VaticMacro">VaticMacro</a></strong><br>
+      <em>ML engine predicting India's YoY inflation using macroeconomic indicators.</em><br><br>
+      <img src="https://skillicons.dev/icons?i=py,flask,sklearn&theme=dark" height="28" />
+    </td>
+  </tr>
+  <tr>
+    <td width="10%" align="center" valign="middle">
+      <a href="https://github.com/DhanushPillay/LifeLink"><img src="https://api.iconify.design/flat-color-icons:like.svg" width="60" alt="LifeLink" /></a>
+    </td>
+    <td width="90%" valign="top">
+      <strong><a href="https://github.com/DhanushPillay/LifeLink">LifeLink</a></strong><br>
+      <em>Live blood & organ donor matching with real-time presence and notifications.</em><br><br>
+      <img src="https://skillicons.dev/icons?i=react,express,mongodb&theme=dark" height="28" />
+    </td>
+  </tr>
+  <tr>
+    <td width="10%" align="center" valign="middle">
+      <a href="https://github.com/DhanushPillay/Tech-News-Aggregator"><img src="https://api.iconify.design/flat-color-icons:news.svg" width="60" alt="Tech News" /></a>
+    </td>
+    <td width="90%" valign="top">
+      <strong><a href="https://github.com/DhanushPillay/Tech-News-Aggregator">Tech News Aggregator</a></strong><br>
+      <em>Concurrent news scraper with NLP sentiment analysis and PWA caching.</em><br><br>
+      <img src="https://skillicons.dev/icons?i=py,flask,vite&theme=dark" height="28" />
+    </td>
+  </tr>
+</table>
 
 <div align="center">
   <br>
