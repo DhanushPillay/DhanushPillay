@@ -1,154 +1,130 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 200" width="100%" height="100%">
   <defs>
-    <!-- Background Canvas -->
-    <linearGradient id="vmCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080B10" />
-      <stop offset="50%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#06090D" />
-    </linearGradient>
-
-    <!-- Subtle Ambient Cyan Glow -->
-    <radialGradient id="vmGlow" cx="80%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.18" />
-      <stop offset="100%" stop-color="#0284C7" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Smooth Border Gradient -->
-    <linearGradient id="vmBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.7">
-        <animate attributeName="stop-color" values="#38BDF8;#818CF8;#34D399;#38BDF8" dur="10s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.3" />
-    </linearGradient>
-
-    <!-- Chart Sparkline Gradient -->
-    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" />
-      <stop offset="60%" stop-color="#34D399" />
-      <stop offset="100%" stop-color="#818CF8" />
+    <linearGradient id="vmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0D12"/>
+      <stop offset="100%" stop-color="#0D1117"/>
     </linearGradient>
   </defs>
 
   <style>
-    @keyframes lineTrace {
-      0% { stroke-dashoffset: 300; }
-      100% { stroke-dashoffset: 0; }
-    }
-    .proj-title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
-      font-weight: 800;
-      font-size: 22px;
-      letter-spacing: -0.4px;
-      fill: #FFFFFF;
-    }
-    .proj-sub {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 400;
-      font-size: 13px;
-      fill: #94A3B8;
-      line-height: 18px;
-    }
-    .proj-bullet {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 500;
-      font-size: 11.5px;
-      fill: #CBD5E1;
-    }
-    .badge-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 600;
-      font-size: 10.5px;
-      fill: #E2E8F0;
-    }
-    .diag-label {
-      font-family: "JetBrains Mono", "Fira Code", monospace;
-      font-weight: 600;
-      font-size: 9px;
-      letter-spacing: 0.3px;
-      fill: #94A3B8;
-    }
-    .diag-value {
-      font-family: "JetBrains Mono", "Fira Code", monospace;
-      font-weight: 700;
-      font-size: 10px;
-      fill: #38BDF8;
-    }
-    .chart-path {
-      stroke-dasharray: 300;
-      animation: lineTrace 3s ease-out forwards;
+    @keyframes cpiPulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
     }
     @media (prefers-reduced-motion: reduce) {
-      .chart-path, #vmBorderGrad animate { animation: none; }
+      .cpi-pulse { animation: none !important; opacity: 1; }
     }
   </style>
 
-  <!-- Card Base Canvas (850x180 Full-Width Responsive) -->
-  <rect x="0" y="0" width="850" height="180" rx="14" fill="url(#vmCardBg)" />
-  <rect x="0" y="0" width="850" height="180" rx="14" fill="url(#vmGlow)" />
-  <rect x="1" y="1" width="848" height="178" rx="13" fill="none" stroke="url(#vmBorderGrad)" stroke-width="1.2" />
+  <!-- Canvas -->
+  <rect width="850" height="200" rx="8" fill="url(#vmBg)"/>
+  <rect x="0.5" y="0.5" width="849" height="199" rx="8" fill="none" stroke="#1E293B" stroke-width="1"/>
 
-  <!-- LEFT COLUMN: Project Details & Context -->
-  <g transform="translate(32, 28)">
-    <!-- Title & Domain -->
-    <text x="0" y="18" class="proj-title">VaticMacro <tspan font-weight="500" font-size="14" fill="#38BDF8">· Macroeconomic ML Forecasting</tspan></text>
-    <text x="0" y="42" class="proj-sub">Machine learning pipeline predicting Indian inflation trajectories and benchmark interest rates.</text>
+  <!-- Left: Scrolling Predictions Feed -->
+  <g transform="translate(32, 24)">
+    <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="9" fill="#475569" letter-spacing="0.8">LATEST PREDICTIONS</text>
+    <line x1="0" y1="22" x2="260" y2="22" stroke="#1E293B" stroke-width="0.5"/>
 
-    <!-- Key Engineering Bullets -->
-    <g transform="translate(0, 64)">
-      <circle cx="4" cy="4" r="2" fill="#38BDF8" />
-      <text x="14" y="8" class="proj-bullet">Forecasts CPI, WPI, and RBI repo rate trends via gradient-boosted time-series models</text>
+    <!-- Clip Window -->
+    <clipPath id="vmFeedClip">
+      <rect x="0" y="24" width="280" height="145"/>
+    </clipPath>
+    
+    <g clip-path="url(#vmFeedClip)">
+      <g>
+        <!-- 5 items × 60px = 300px total height per set -->
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-300" dur="20s" repeatCount="indefinite" />
+        
+        <!-- === SET 1 === -->
+        <g transform="translate(0, 42)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">CPI INFLATION</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#F43F5E">▲ 4.45%</text>
+          <text x="110" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">YoY (July)</text>
+        </g>
+        
+        <g transform="translate(0, 102)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">WPI INFLATION</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#34D399">▼ 9.78%</text>
+          <text x="110" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">YoY (July)</text>
+        </g>
+        
+        <g transform="translate(0, 162)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">RBI REPO RATE</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#F59E0B">5.25%</text>
+          <text x="85" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">maintained</text>
+        </g>
+        
+        <g transform="translate(0, 222)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">GDP GROWTH</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#34D399">▲ 6.70%</text>
+          <text x="110" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">FY27 proj</text>
+        </g>
 
-      <circle cx="4" cy="24" r="2" fill="#34D399" />
-      <text x="14" y="28" class="proj-bullet">Automated feature engineering on USD/INR exchange rates, crude oil &amp; global commodity indices</text>
-    </g>
+        <g transform="translate(0, 282)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">USD / INR</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#38BDF8">95.66</text>
+          <text x="85" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">spot rate</text>
+        </g>
 
-    <!-- Tech Badges -->
-    <g transform="translate(0, 114)">
-      <g transform="translate(0, 0)">
-        <rect x="0" y="0" width="62" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
-        <text x="10" y="15" class="badge-text">Python</text>
-      </g>
-      <g transform="translate(70, 0)">
-        <rect x="0" y="0" width="76" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
-        <text x="10" y="15" class="badge-text">XGBoost</text>
-      </g>
-      <g transform="translate(154, 0)">
-        <rect x="0" y="0" width="88" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
-        <text x="10" y="15" class="badge-text">Scikit-Learn</text>
-      </g>
-      <g transform="translate(250, 0)">
-        <rect x="0" y="0" width="56" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
-        <text x="10" y="15" class="badge-text">Flask</text>
-      </g>
-      <g transform="translate(314, 0)">
-        <rect x="0" y="0" width="60" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
-        <text x="10" y="15" class="badge-text">Docker</text>
+        <!-- === SET 2 (Duplicate for seamless loop) === -->
+        <g transform="translate(0, 342)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">CPI INFLATION</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#F43F5E">▲ 4.45%</text>
+          <text x="110" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">YoY (July)</text>
+        </g>
+        
+        <g transform="translate(0, 402)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">WPI INFLATION</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#34D399">▼ 9.78%</text>
+          <text x="110" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">YoY (July)</text>
+        </g>
+        
+        <g transform="translate(0, 462)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">RBI REPO RATE</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#F59E0B">5.25%</text>
+          <text x="85" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">maintained</text>
+        </g>
+        
+        <g transform="translate(0, 522)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">GDP GROWTH</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#34D399">▲ 6.70%</text>
+          <text x="110" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">FY27 proj</text>
+        </g>
+
+        <g transform="translate(0, 582)">
+          <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="10" fill="#64748B" letter-spacing="0.8">USD / INR</text>
+          <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="24" fill="#38BDF8">95.66</text>
+          <text x="85" y="26" font-family="-apple-system, sans-serif" font-weight="400" font-size="11" fill="#475569">spot rate</text>
+        </g>
       </g>
     </g>
   </g>
 
-  <!-- RIGHT COLUMN: Quantitative Time-Series Sparkline Schematic -->
-  <g transform="translate(560, 24)">
-    <rect x="0" y="0" width="258" height="132" rx="10" fill="#0E141D" stroke="#1E293B" stroke-width="1" />
+  <!-- Divider -->
+  <line x1="320" y1="28" x2="320" y2="172" stroke="#1E293B" stroke-width="1"/>
 
-    <!-- Sparkline Visual -->
-    <g transform="translate(16, 16)">
-      <line x1="0" y1="20" x2="226" y2="20" stroke="#1E293B" stroke-dasharray="3,3" stroke-width="0.8" />
-      <line x1="0" y1="45" x2="226" y2="45" stroke="#1E293B" stroke-dasharray="3,3" stroke-width="0.8" />
+  <!-- Right: Project info -->
+  <g transform="translate(352, 28)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.6s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" from="362, 28" to="352, 28" dur="1s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1" keyTimes="0; 1"/>
+    
+    <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="22" fill="#F1F5F9" letter-spacing="-0.5">VaticMacro</text>
 
-      <!-- Forecast Trend Line -->
-      <path class="chart-path" d="M 10 42 L 50 35 L 90 40 L 130 25 L 170 28 L 216 12" fill="none" stroke="url(#chartGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-      <circle cx="216" cy="12" r="3.5" fill="#34D399" />
-    </g>
+    <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="13" fill="#94A3B8">ML pipeline that forecasts Indian macroeconomic</text>
+    <text x="0" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="13" fill="#94A3B8">indicators using gradient-boosted models with</text>
+    <text x="0" y="72" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="13" fill="#94A3B8">k-fold cross-validation.</text>
 
-    <!-- Key Metrics Telemetry -->
-    <g transform="translate(16, 68)">
-      <rect x="0" y="0" width="226" height="48" rx="6" fill="#131B26" stroke="#202D3D" stroke-width="1" />
-      
-      <text x="12" y="20" class="diag-label">CPI FORECAST: <tspan class="diag-value">5.4%</tspan></text>
-      <text x="120" y="20" class="diag-label">REPO RATE: <tspan class="diag-value">6.50%</tspan></text>
-      <text x="12" y="38" class="diag-label">MODEL: <tspan class="diag-value">GBDT / ENSEMBLE</tspan></text>
-      <text x="120" y="38" class="diag-label">STATUS: <tspan class="diag-value">INFERENCE READY</tspan></text>
-    </g>
+    <!-- Model info — real from the repo -->
+    <text x="0" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#64748B" letter-spacing="0.8">BEST MODEL</text>
+    <text x="110" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="12" fill="#94A3B8">Ridge (K-fold CV)</text>
+
+    <!-- Tech stack — plain text -->
+    <text x="0" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="12" fill="#475569">Python · XGBoost · scikit-learn · Flask · Docker</text>
+
+    <!-- Source link -->
+    <text x="0" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="11" fill="#334155">github.com/DhanushPillay/VaticMacro</text>
   </g>
+
+  <!-- Subtle live indicator -->
+  <circle cx="810" cy="24" r="3" fill="#34D399" class="cpi-pulse" style="animation: cpiPulse 3s ease-in-out infinite"/>
 </svg>
