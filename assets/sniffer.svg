@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="100%" height="100%">
+  <defs>
+    <!-- Background Canvas -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B10" />
+      <stop offset="50%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#06090D" />
+    </linearGradient>
+
+    <!-- Subtle Ambient Green/Cyan Glow -->
+    <radialGradient id="snifferGlow" cx="80%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Smooth Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.7">
+        <animate attributeName="stop-color" values="#10B981;#38BDF8;#34D399;#10B981" dur="10s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Pipeline Flow Line Gradient -->
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes flowDash {
+      0% { stroke-dashoffset: 40; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .proj-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      letter-spacing: -0.4px;
+      fill: #FFFFFF;
+    }
+    .proj-sub {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      fill: #94A3B8;
+      line-height: 18px;
+    }
+    .proj-bullet {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 11.5px;
+      fill: #CBD5E1;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 10.5px;
+      fill: #E2E8F0;
+    }
+    .diag-label {
+      font-family: "JetBrains Mono", "Fira Code", monospace;
+      font-weight: 600;
+      font-size: 9px;
+      letter-spacing: 0.3px;
+      fill: #94A3B8;
+    }
+    .diag-value {
+      font-family: "JetBrains Mono", "Fira Code", monospace;
+      font-weight: 700;
+      font-size: 10px;
+      fill: #34D399;
+    }
+    .active-flow {
+      stroke-dasharray: 6, 4;
+      animation: flowDash 3s linear infinite;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .active-flow, #borderGrad animate { animation: none; }
+    }
+  </style>
+
+  <!-- Card Base Canvas (850x180 Full-Width Responsive) -->
+  <rect x="0" y="0" width="850" height="180" rx="14" fill="url(#cardBg)" />
+  <rect x="0" y="0" width="850" height="180" rx="14" fill="url(#snifferGlow)" />
+  <rect x="1" y="1" width="848" height="178" rx="13" fill="none" stroke="url(#borderGrad)" stroke-width="1.2" />
+
+  <!-- LEFT COLUMN: Project Details & Context -->
+  <g transform="translate(32, 28)">
+    <!-- Title & Domain -->
+    <text x="0" y="18" class="proj-title">Sniffer <tspan font-weight="500" font-size="14" fill="#10B981">· News Aggregation &amp; NLP Engine</tspan></text>
+    <text x="0" y="42" class="proj-sub">Concurrent scraper &amp; mobile-first PWA with SQLite FTS5 search &amp; VADER sentiment scoring.</text>
+
+    <!-- Key Engineering Bullets -->
+    <g transform="translate(0, 64)">
+      <circle cx="4" cy="4" r="2" fill="#10B981" />
+      <text x="14" y="8" class="proj-bullet">5 concurrent RSS/HTML scrapers (HN, TechCrunch, Reddit, Verge, Ars) with 5-min TTL cache</text>
+
+      <circle cx="4" cy="24" r="2" fill="#38BDF8" />
+      <text x="14" y="28" class="proj-bullet">Full-text search via SQLite FTS5 with WAL mode, excerpt generation &amp; Flask-Talisman security</text>
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(0, 114)">
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="62" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
+        <text x="10" y="15" class="badge-text">Python</text>
+      </g>
+      <g transform="translate(70, 0)">
+        <rect x="0" y="0" width="56" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
+        <text x="10" y="15" class="badge-text">Flask</text>
+      </g>
+      <g transform="translate(134, 0)">
+        <rect x="0" y="0" width="84" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
+        <text x="10" y="15" class="badge-text">SQLite FTS5</text>
+      </g>
+      <g transform="translate(226, 0)">
+        <rect x="0" y="0" width="54" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
+        <text x="10" y="15" class="badge-text">NLTK</text>
+      </g>
+      <g transform="translate(288, 0)">
+        <rect x="0" y="0" width="94" height="22" rx="6" fill="#141E2B" stroke="#253549" stroke-width="1" />
+        <text x="10" y="15" class="badge-text">PWA / Cache</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Architecture Ingestion Diagram -->
+  <g transform="translate(560, 24)">
+    <rect x="0" y="0" width="258" height="132" rx="10" fill="#0E141D" stroke="#1E293B" stroke-width="1" />
+
+    <!-- 5 Source Nodes -->
+    <g transform="translate(16, 20)">
+      <rect x="0" y="0" width="60" height="20" rx="4" fill="#16222F" stroke="#2A3D52" stroke-width="0.8" />
+      <text x="6" y="13" class="diag-label">5 SOURCES</text>
+
+      <line x1="60" y1="10" x2="90" y2="10" stroke="url(#flowGrad)" stroke-width="1.5" class="active-flow" />
+
+      <!-- Ingestion Pipeline Hub -->
+      <rect x="90" y="-8" width="68" height="36" rx="6" fill="#0F2B20" stroke="#1D5B44" stroke-width="1" />
+      <text x="96" y="8" font-family="JetBrains Mono" font-size="8" fill="#34D399">CONCURRENT</text>
+      <text x="96" y="20" font-family="JetBrains Mono" font-size="8" fill="#34D399">INGESTION</text>
+
+      <line x1="158" y1="10" x2="188" y2="10" stroke="url(#flowGrad)" stroke-width="1.5" class="active-flow" />
+
+      <!-- Storage & Search Hub -->
+      <rect x="188" y="-8" width="56" height="36" rx="6" fill="#122538" stroke="#214A70" stroke-width="1" />
+      <text x="194" y="8" font-family="JetBrains Mono" font-size="8" fill="#38BDF8">SQLITE</text>
+      <text x="194" y="20" font-family="JetBrains Mono" font-size="8" fill="#38BDF8">FTS5</text>
+    </g>
+
+    <!-- Metrics Telemetry Box -->
+    <g transform="translate(16, 68)">
+      <rect x="0" y="0" width="226" height="48" rx="6" fill="#131B26" stroke="#202D3D" stroke-width="1" />
+      
+      <text x="12" y="20" class="diag-label">CACHE TTL: <tspan class="diag-value">5 MIN</tspan></text>
+      <text x="120" y="20" class="diag-label">SEARCH: <tspan class="diag-value">SUB-10ms</tspan></text>
+      <text x="12" y="38" class="diag-label">SENTIMENT: <tspan class="diag-value">VADER NLP</tspan></text>
+      <text x="120" y="38" class="diag-label">CLIENT: <tspan class="diag-value">PWA OFFLINE</tspan></text>
+    </g>
+  </g>
+</svg>
