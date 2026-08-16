@@ -72,8 +72,8 @@ I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** 
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/DhanushPillay/TechNews-Aggregator">
-        <img src="./assets/technews.svg" width="100%" alt="TechNews Engine" />
+      <a href="https://github.com/DhanushPillay/Web-scraper">
+        <img src="./assets/technews.svg" width="100%" alt="Sniffer" />
       </a>
     </td>
     <td width="50%" align="center" valign="middle">

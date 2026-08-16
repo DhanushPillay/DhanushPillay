@@ -1,103 +1,158 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 240" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 260" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#161B22" />
-      <stop offset="100%" stop-color="#0D1117" />
+    <!-- Background Canvas -->
+    <linearGradient id="vmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B10" />
+      <stop offset="60%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#06090D" />
     </linearGradient>
 
-    <!-- Animated Border Glow -->
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8">
-        <animate attributeName="stop-color" values="#38BDF8;#2DD4BF;#38BDF8" dur="4s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#21262D" />
+    <!-- Chart Line Gradients -->
+    <linearGradient id="cpiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="wpiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#F43F5E" />
+    </linearGradient>
+
+    <linearGradient id="vmBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Forecast Area Glow -->
+    <linearGradient id="forecastArea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
     </linearGradient>
   </defs>
 
   <style>
-    .title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    @keyframes chartDraw {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes scanPoint {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(10px, -6px); }
+    }
+    .project-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 19px;
       fill: #FFFFFF;
+      letter-spacing: -0.3px;
     }
-    .badge-tag {
-      font-family: "JetBrains Mono", "Fira Code", monospace, sans-serif;
-      font-weight: 600;
-      font-size: 10px;
-      fill: #38BDF8;
-    }
-    .desc {
+    .project-desc {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-weight: 400;
-      font-size: 12.5px;
-      fill: #8B949E;
-      line-height: 18px;
+      font-size: 12px;
+      fill: #94A3B8;
+      line-height: 17px;
     }
-    .chip {
-      fill: #21262D;
-      stroke: #30363D;
-      stroke-width: 1;
-      rx: 4;
-    }
-    .chip-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 500;
-      font-size: 10.5px;
-      fill: #C9D1D9;
-    }
-    .cta-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 600;
+    .metric-val {
+      font-family: "JetBrains Mono", "Fira Code", monospace;
+      font-weight: 700;
       font-size: 11px;
       fill: #38BDF8;
     }
+    .metric-label {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 10px;
+      fill: #64748B;
+    }
+    .tag-chip {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 10.5px;
+      fill: #CBD5E1;
+    }
+    .chart-line-1 {
+      stroke-dasharray: 400;
+      animation: chartDraw 3s ease-out forwards;
+    }
+    .data-dot {
+      animation: scanPoint 3s ease-in-out infinite;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .chart-line-1, .data-dot { animation: none; }
+    }
   </style>
 
-  <!-- Card Border & Background -->
-  <rect x="2" y="2" width="406" height="236" rx="12" fill="url(#borderGrad)" />
-  <rect x="3" y="3" width="404" height="234" rx="11" fill="url(#bgGrad)" />
+  <!-- Card Canvas -->
+  <rect x="0" y="0" width="410" height="260" rx="14" fill="url(#vmBg)" />
+  <rect x="1" y="1" width="408" height="258" rx="13" fill="none" stroke="url(#vmBorder)" stroke-width="1.2" />
 
-  <g transform="translate(20, 20)">
-    <!-- Header Row: Icon + Title + Type Badge -->
-    <rect x="0" y="0" width="36" height="36" rx="8" fill="#1C2128" stroke="#30363D" stroke-width="1" />
-    <!-- Chart / Macro Icon -->
-    <path d="M8 26 L14 18 L20 22 L28 10" stroke="#38BDF8" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
-    <circle cx="28" cy="10" r="2.5" fill="#38BDF8" />
+  <!-- TOP HEADER -->
+  <g transform="translate(22, 22)">
+    <text x="0" y="18" class="project-title">VaticMacro</text>
+    <text x="0" y="40" class="project-desc">Macroeconomic ML framework predicting inflation trends (CPI, WPI, Repo Rates).</text>
+  </g>
 
-    <text x="46" y="16" class="title">VaticMacro</text>
-    <rect x="46" y="22" width="132" height="16" rx="4" fill="#0E2333" stroke="#1D4363" stroke-width="0.8" />
-    <text x="52" y="34" class="badge-tag">MACRO FORECASTING</text>
+  <!-- INTERACTIVE MACRO TIME-SERIES VISUALIZATION -->
+  <g transform="translate(22, 90)">
+    <!-- Chart Background Grid -->
+    <rect x="0" y="0" width="366" height="85" rx="8" fill="#101722" stroke="#1E293B" stroke-width="1" />
+    
+    <!-- Grid Lines -->
+    <line x1="10" y1="25" x2="356" y2="25" stroke="#1E293B" stroke-dasharray="4,4" stroke-width="1" />
+    <line x1="10" y1="50" x2="356" y2="50" stroke="#1E293B" stroke-dasharray="4,4" stroke-width="1" />
+    <line x1="10" y1="75" x2="356" y2="75" stroke="#1E293B" stroke-dasharray="4,4" stroke-width="1" />
 
-    <!-- Description -->
-    <text x="0" y="65" class="desc">
-      <tspan x="0" dy="0">Production ML framework analyzing Indian inflation indicators</tspan>
-      <tspan x="0" dy="19">(CPI, WPI, GDP, RBI rates, USD/INR, Brent Crude) with</tspan>
-      <tspan x="0" dy="19">ensemble predictive models and containerized APIs.</tspan>
-    </text>
+    <!-- Forecast Shaded Cone Area -->
+    <polygon points="220,40 340,15 340,65 220,40" fill="url(#forecastArea)" />
 
-    <!-- Tech Chips -->
-    <g transform="translate(0, 130)">
-      <rect x="0" y="0" width="58" height="22" class="chip" />
-      <text x="8" y="15" class="chip-text">Python</text>
+    <!-- CPI Line Graph (Cyan/Emerald Gradient) -->
+    <path class="chart-line-1" d="M 20 60 L 70 52 L 120 58 L 170 38 L 220 40 L 270 28 L 340 22" fill="none" stroke="url(#cpiGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
 
-      <rect x="66" y="0" width="68" height="22" class="chip" />
-      <text x="74" y="15" class="chip-text">XGBoost</text>
+    <!-- WPI Secondary Line (Indigo/Coral) -->
+    <path d="M 20 70 L 70 65 L 120 48 L 170 55 L 220 50 L 270 42 L 340 38" fill="none" stroke="url(#wpiGrad)" stroke-width="1.8" stroke-dasharray="3,3" stroke-linecap="round" />
 
-      <rect x="142" y="0" width="82" height="22" class="chip" />
-      <text x="150" y="15" class="chip-text">Scikit-Learn</text>
+    <!-- Active Forecast Pulse Point -->
+    <circle cx="340" cy="22" r="4.5" fill="#34D399" class="data-dot" />
+    <circle cx="340" cy="22" r="2" fill="#FFFFFF" />
 
-      <rect x="232" y="0" width="50" height="22" class="chip" />
-      <text x="240" y="15" class="chip-text">Flask</text>
+    <!-- Chart Legend / Metrics -->
+    <g transform="translate(14, 16)">
+      <text x="0" y="0" class="metric-label">CPI FORECAST: <tspan class="metric-val">5.4%</tspan></text>
+      <text x="130" y="0" class="metric-label">REPO: <tspan class="metric-val">6.50%</tspan></text>
+      <text x="230" y="0" class="metric-label">MODEL: <tspan class="metric-val">XGBOOST</tspan></text>
+    </g>
+  </g>
 
-      <rect x="290" y="0" width="58" height="22" class="chip" />
-      <text x="298" y="15" class="chip-text">Docker</text>
+  <!-- TECH CHIPS FOOTER -->
+  <g transform="translate(22, 195)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="62" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">Python</text>
     </g>
 
-    <!-- Footer Action -->
-    <g transform="translate(0, 175)">
-      <line x1="0" y1="0" x2="370" y2="0" stroke="#21262D" stroke-width="1" />
-      <text x="0" y="18" class="cta-text">View Repository &amp; Architecture →</text>
+    <g transform="translate(70, 0)">
+      <rect x="0" y="0" width="76" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">XGBoost</text>
     </g>
+
+    <g transform="translate(154, 0)">
+      <rect x="0" y="0" width="88" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">Scikit-Learn</text>
+    </g>
+
+    <g transform="translate(250, 0)">
+      <rect x="0" y="0" width="56" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">Flask</text>
+    </g>
+
+    <g transform="translate(314, 0)">
+      <rect x="0" y="0" width="52" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">Docker</text>
+    </g>
+  </g>
+
+  <!-- ACTION LINK HINT -->
+  <g transform="translate(22, 235)">
+    <text x="0" y="12" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" fill="#38BDF8">View Repository &amp; Pipeline →</text>
   </g>
 </svg>

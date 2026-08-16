@@ -1,104 +1,148 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 240" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 260" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#161B22" />
-      <stop offset="100%" stop-color="#0D1117" />
+    <!-- Background Canvas -->
+    <linearGradient id="snBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B10" />
+      <stop offset="60%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#06090D" />
     </linearGradient>
 
-    <!-- Animated Border Glow -->
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981">
-        <animate attributeName="stop-color" values="#10B981;#06B6D4;#10B981" dur="4s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#21262D" />
+    <linearGradient id="snBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Source Activity Stream Gradient -->
+    <linearGradient id="sourceGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#38BDF8" />
     </linearGradient>
   </defs>
 
   <style>
-    .title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    @keyframes pulseFeed {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+    @keyframes ftsGlow {
+      0%, 100% { stroke-dashoffset: 60; }
+      50% { stroke-dashoffset: 0; }
+    }
+    .project-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 19px;
       fill: #FFFFFF;
+      letter-spacing: -0.3px;
     }
-    .badge-tag {
-      font-family: "JetBrains Mono", "Fira Code", monospace, sans-serif;
-      font-weight: 600;
-      font-size: 10px;
-      fill: #10B981;
-    }
-    .desc {
+    .project-desc {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-weight: 400;
-      font-size: 12.5px;
-      fill: #8B949E;
-      line-height: 18px;
+      font-size: 12px;
+      fill: #94A3B8;
+      line-height: 17px;
     }
-    .chip {
-      fill: #21262D;
-      stroke: #30363D;
-      stroke-width: 1;
-      rx: 4;
+    .source-tag {
+      font-family: "JetBrains Mono", "Fira Code", monospace;
+      font-size: 9px;
+      fill: #64748B;
     }
-    .chip-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 500;
-      font-size: 10.5px;
-      fill: #C9D1D9;
-    }
-    .cta-text {
+    .tag-chip {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-weight: 600;
-      font-size: 11px;
-      fill: #10B981;
+      font-size: 10.5px;
+      fill: #CBD5E1;
+    }
+    .active-stream {
+      animation: pulseFeed 3s ease-in-out infinite;
+    }
+    .fts-line {
+      stroke-dasharray: 8, 4;
+      animation: ftsGlow 5s linear infinite;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .active-stream, .fts-line { animation: none; }
     }
   </style>
 
-  <!-- Card Border & Background -->
-  <rect x="2" y="2" width="406" height="236" rx="12" fill="url(#borderGrad)" />
-  <rect x="3" y="3" width="404" height="234" rx="11" fill="url(#bgGrad)" />
+  <!-- Card Canvas -->
+  <rect x="0" y="0" width="410" height="260" rx="14" fill="url(#snBg)" />
+  <rect x="1" y="1" width="408" height="258" rx="13" fill="none" stroke="url(#snBorder)" stroke-width="1.2" />
 
-  <g transform="translate(20, 20)">
-    <!-- Header Row: Icon + Title + Type Badge -->
-    <rect x="0" y="0" width="36" height="36" rx="8" fill="#1C2128" stroke="#30363D" stroke-width="1" />
-    <!-- Newspaper / Stream Icon -->
-    <rect x="8" y="10" width="20" height="16" rx="2" fill="none" stroke="#10B981" stroke-width="2" />
-    <line x1="12" y1="15" x2="24" y2="15" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" />
-    <line x1="12" y1="19" x2="20" y2="19" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" />
+  <!-- TOP HEADER -->
+  <g transform="translate(22, 22)">
+    <text x="0" y="18" class="project-title">Sniffer</text>
+    <text x="0" y="40" class="project-desc">Concurrent tech news aggregator &amp; PWA with SQLite FTS5 search &amp; NLP indexing.</text>
+  </g>
 
-    <text x="46" y="16" class="title">TechNews Engine</text>
-    <rect x="46" y="22" width="138" height="16" rx="4" fill="#0C261E" stroke="#174E3E" stroke-width="0.8" />
-    <text x="52" y="34" class="badge-tag">NLP STREAM AGGREGATOR</text>
+  <!-- CONCURRENT SCRAPING & FTS5 SEARCH PIPELINE -->
+  <g transform="translate(22, 90)">
+    <!-- Container -->
+    <rect x="0" y="0" width="366" height="85" rx="8" fill="#101722" stroke="#1E293B" stroke-width="1" />
 
-    <!-- Description -->
-    <text x="0" y="65" class="desc">
-      <tspan x="0" dy="0">High-throughput news intelligence PWA streaming from 5+</tspan>
-      <tspan x="0" dy="19">tech sources with concurrent asynchronous scrapers,</tspan>
-      <tspan x="0" dy="19">automated deduplication, and VADER sentiment indexing.</tspan>
-    </text>
-
-    <!-- Tech Chips -->
-    <g transform="translate(0, 130)">
-      <rect x="0" y="0" width="58" height="22" class="chip" />
-      <text x="8" y="15" class="chip-text">Python</text>
-
-      <rect x="66" y="0" width="50" height="22" class="chip" />
-      <text x="74" y="15" class="chip-text">Flask</text>
-
-      <rect x="124" y="0" width="56" height="22" class="chip" />
-      <text x="132" y="15" class="chip-text">SQLite</text>
-
-      <rect x="188" y="0" width="50" height="22" class="chip" />
-      <text x="196" y="15" class="chip-text">NLTK</text>
-
-      <rect x="246" y="0" width="104" height="22" class="chip" />
-      <text x="254" y="15" class="chip-text">BeautifulSoup4</text>
+    <!-- 5 Live Sources Indicators -->
+    <g transform="translate(14, 18)" class="active-stream">
+      <circle cx="4" cy="4" r="3" fill="#10B981" />
+      <text x="14" y="7" font-family="JetBrains Mono" font-size="9.5" fill="#34D399">5 CONCURRENT SOURCES // RSS-FIRST ENGINE</text>
     </g>
 
-    <!-- Footer Action -->
-    <g transform="translate(0, 175)">
-      <line x1="0" y1="0" x2="370" y2="0" stroke="#21262D" stroke-width="1" />
-      <text x="0" y="18" class="cta-text">View Repository &amp; Architecture →</text>
+    <!-- Source Chips (HN, TechCrunch, Reddit, Verge, Ars) -->
+    <g transform="translate(14, 34)">
+      <text x="0" y="10" class="source-tag">HN</text>
+      <circle cx="24" cy="7" r="1.5" fill="#475569" />
+      <text x="32" y="10" class="source-tag">TECHCRUNCH</text>
+      <circle cx="106" cy="7" r="1.5" fill="#475569" />
+      <text x="114" y="10" class="source-tag">R/TECHNOLOGY</text>
+      <circle cx="196" cy="7" r="1.5" fill="#475569" />
+      <text x="204" y="10" class="source-tag">VERGE</text>
+      <circle cx="244" cy="7" r="1.5" fill="#475569" />
+      <text x="252" y="10" class="source-tag">ARS TECHNICA</text>
     </g>
+
+    <!-- Architecture Badges: FTS5 + WAL Mode + VADER NLP -->
+    <g transform="translate(14, 56)">
+      <rect x="0" y="0" width="98" height="18" rx="4" fill="#162534" stroke="#253E57" stroke-width="0.8" />
+      <text x="8" y="12" font-family="JetBrains Mono" font-size="8.5" fill="#38BDF8">SQLITE FTS5</text>
+
+      <rect x="106" y="0" width="85" height="18" rx="4" fill="#0E2820" stroke="#1B4F3E" stroke-width="0.8" />
+      <text x="114" y="12" font-family="JetBrains Mono" font-size="8.5" fill="#34D399">WAL CACHE</text>
+
+      <rect x="199" y="0" width="138" height="18" rx="4" fill="#1C182A" stroke="#3D325C" stroke-width="0.8" />
+      <text x="207" y="12" font-family="JetBrains Mono" font-size="8.5" fill="#A78BFA">VADER SENTIMENT</text>
+    </g>
+  </g>
+
+  <!-- TECH CHIPS FOOTER -->
+  <g transform="translate(22, 195)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="62" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">Python</text>
+    </g>
+
+    <g transform="translate(70, 0)">
+      <rect x="0" y="0" width="56" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">Flask</text>
+    </g>
+
+    <g transform="translate(134, 0)">
+      <rect x="0" y="0" width="82" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">SQLite FTS</text>
+    </g>
+
+    <g transform="translate(224, 0)">
+      <rect x="0" y="0" width="54" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">NLTK</text>
+    </g>
+
+    <g transform="translate(286, 0)">
+      <rect x="0" y="0" width="80" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">PWA / RSS</text>
+    </g>
+  </g>
+
+  <!-- ACTION LINK HINT -->
+  <g transform="translate(22, 235)">
+    <text x="0" y="12" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" fill="#10B981">View Repository &amp; Architecture →</text>
   </g>
 </svg>

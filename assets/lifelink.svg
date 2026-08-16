@@ -1,102 +1,139 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 240" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 260" width="100%" height="100%">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#161B22" />
-      <stop offset="100%" stop-color="#0D1117" />
+    <!-- Background Canvas -->
+    <linearGradient id="llBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080B10" />
+      <stop offset="60%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#06090D" />
     </linearGradient>
 
-    <!-- Animated Border Glow -->
-    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F43F5E">
-        <animate attributeName="stop-color" values="#F43F5E;#A855F7;#F43F5E" dur="4s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#21262D" />
+    <linearGradient id="llBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="pulseGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F43F5E" />
+      <stop offset="100%" stop-color="#A855F7" />
     </linearGradient>
   </defs>
 
   <style>
-    .title {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    @keyframes nodePulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.4); opacity: 0.3; }
+    }
+    @keyframes routePulse {
+      0% { stroke-dashoffset: 100; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .project-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
       font-weight: 700;
-      font-size: 18px;
+      font-size: 19px;
       fill: #FFFFFF;
+      letter-spacing: -0.3px;
     }
-    .badge-tag {
-      font-family: "JetBrains Mono", "Fira Code", monospace, sans-serif;
-      font-weight: 600;
-      font-size: 10px;
-      fill: #F43F5E;
-    }
-    .desc {
+    .project-desc {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-weight: 400;
-      font-size: 12.5px;
-      fill: #8B949E;
-      line-height: 18px;
+      font-size: 12px;
+      fill: #94A3B8;
+      line-height: 17px;
     }
-    .chip {
-      fill: #21262D;
-      stroke: #30363D;
-      stroke-width: 1;
-      rx: 4;
+    .node-beacon {
+      animation: nodePulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      transform-origin: center;
     }
-    .chip-text {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 500;
-      font-size: 10.5px;
-      fill: #C9D1D9;
+    .routing-line {
+      stroke-dasharray: 8, 4;
+      animation: routePulse 4s linear infinite;
     }
-    .cta-text {
+    .tag-chip {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-weight: 600;
-      font-size: 11px;
-      fill: #F43F5E;
+      font-size: 10.5px;
+      fill: #CBD5E1;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .node-beacon, .routing-line { animation: none; }
     }
   </style>
 
-  <!-- Card Border & Background -->
-  <rect x="2" y="2" width="406" height="236" rx="12" fill="url(#borderGrad)" />
-  <rect x="3" y="3" width="404" height="234" rx="11" fill="url(#bgGrad)" />
+  <!-- Card Canvas -->
+  <rect x="0" y="0" width="410" height="260" rx="14" fill="url(#llBg)" />
+  <rect x="1" y="1" width="408" height="258" rx="13" fill="none" stroke="url(#llBorder)" stroke-width="1.2" />
 
-  <g transform="translate(20, 20)">
-    <!-- Header Row: Icon + Title + Type Badge -->
-    <rect x="0" y="0" width="36" height="36" rx="8" fill="#1C2128" stroke="#30363D" stroke-width="1" />
-    <!-- Heart / Pulse Icon -->
-    <path d="M18 10 C14 4, 6 6, 6 13 C6 20, 18 27, 18 27 C18 27, 30 20, 30 13 C30 6, 22 4, 18 10 Z" fill="none" stroke="#F43F5E" stroke-width="2" stroke-linejoin="round" />
+  <!-- TOP HEADER -->
+  <g transform="translate(22, 22)">
+    <text x="0" y="18" class="project-title">LifeLink</text>
+    <text x="0" y="40" class="project-desc">Real-time medical platform connecting organ and blood donors with patients.</text>
+  </g>
 
-    <text x="46" y="16" class="title">LifeLink</text>
-    <rect x="46" y="22" width="138" height="16" rx="4" fill="#2E111A" stroke="#5E1A2C" stroke-width="0.8" />
-    <text x="52" y="34" class="badge-tag">HEALTHCARE PLATFORM</text>
+  <!-- REAL-TIME MATCHING GRAPH VISUALIZATION -->
+  <g transform="translate(22, 90)">
+    <rect x="0" y="0" width="366" height="85" rx="8" fill="#101722" stroke="#1E293B" stroke-width="1" />
 
-    <!-- Description -->
-    <text x="0" y="65" class="desc">
-      <tspan x="0" dy="0">Real-time medical donor matching and management platform</tspan>
-      <tspan x="0" dy="19">connecting patients with compatible blood and organ donors</tspan>
-      <tspan x="0" dy="19">using geospatial indexing and reactive state queues.</tspan>
-    </text>
+    <!-- Geospatial Mesh Lines -->
+    <line x1="60" y1="42" x2="183" y2="28" stroke="url(#pulseGlow)" stroke-width="1.8" class="routing-line" />
+    <line x1="183" y1="28" x2="300" y2="52" stroke="url(#pulseGlow)" stroke-width="1.8" class="routing-line" />
+    <line x1="60" y1="42" x2="140" y2="65" stroke="#1E293B" stroke-width="1" />
+    <line x1="140" y1="65" x2="300" y2="52" stroke="#1E293B" stroke-width="1" />
 
-    <!-- Tech Chips -->
-    <g transform="translate(0, 130)">
-      <rect x="0" y="0" width="52" height="22" class="chip" />
-      <text x="8" y="15" class="chip-text">React</text>
-
-      <rect x="60" y="0" width="46" height="22" class="chip" />
-      <text x="68" y="15" class="chip-text">Vite</text>
-
-      <rect x="114" y="0" width="62" height="22" class="chip" />
-      <text x="122" y="15" class="chip-text">Node.js</text>
-
-      <rect x="184" y="0" width="74" height="22" class="chip" />
-      <text x="192" y="15" class="chip-text">MongoDB</text>
-
-      <rect x="266" y="0" width="80" height="22" class="chip" />
-      <text x="274" y="15" class="chip-text">Express.js</text>
+    <!-- Hospital Center Hub (Node 1) -->
+    <g transform="translate(183, 28)">
+      <circle cx="0" cy="0" r="10" fill="#F43F5E" opacity="0.2" class="node-beacon" />
+      <circle cx="0" cy="0" r="5" fill="#F43F5E" />
+      <text x="0" y="-12" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#F43F5E">MATCH HUB</text>
     </g>
 
-    <!-- Footer Action -->
-    <g transform="translate(0, 175)">
-      <line x1="0" y1="0" x2="370" y2="0" stroke="#21262D" stroke-width="1" />
-      <text x="0" y="18" class="cta-text">View Repository &amp; Architecture →</text>
+    <!-- Patient Center (Node 2) -->
+    <g transform="translate(60, 42)">
+      <circle cx="0" cy="0" r="4" fill="#38BDF8" />
+      <text x="0" y="15" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#94A3B8">PATIENT (A+)</text>
     </g>
+
+    <!-- Donor Center (Node 3) -->
+    <g transform="translate(300, 52)">
+      <circle cx="0" cy="0" r="4" fill="#34D399" />
+      <text x="0" y="15" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#34D399">DONOR VERIFIED</text>
+    </g>
+
+    <g transform="translate(140, 65)">
+      <circle cx="0" cy="0" r="3" fill="#64748B" />
+    </g>
+  </g>
+
+  <!-- TECH CHIPS FOOTER -->
+  <g transform="translate(22, 195)">
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="56" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">React</text>
+    </g>
+
+    <g transform="translate(64, 0)">
+      <rect x="0" y="0" width="48" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">Vite</text>
+    </g>
+
+    <g transform="translate(120, 0)">
+      <rect x="0" y="0" width="68" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">Node.js</text>
+    </g>
+
+    <g transform="translate(196, 0)">
+      <rect x="0" y="0" width="76" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">MongoDB</text>
+    </g>
+
+    <g transform="translate(280, 0)">
+      <rect x="0" y="0" width="72" height="24" rx="6" fill="#15202E" stroke="#25374D" stroke-width="1" />
+      <text x="10" y="16" class="tag-chip">Express</text>
+    </g>
+  </g>
+
+  <!-- ACTION LINK HINT -->
+  <g transform="translate(22, 235)">
+    <text x="0" y="12" font-family="-apple-system, sans-serif" font-weight="600" font-size="11" fill="#F43F5E">View Repository &amp; Architecture →</text>
   </g>
 </svg>
