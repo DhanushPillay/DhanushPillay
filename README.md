@@ -1,86 +1,119 @@
 <div align="center">
-  <h1 align="center">Hi, I'm Dhanush Pillay</h1>
-  
-  <p align="center">
-    <a href="https://github.com/DhanushPillay">
-      <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Cloud+%26+Big+Data+Engineering;Machine+Learning+Developer;Full-Stack+Architect" alt="Typing SVG" />
-    </a>
-  </p>
+  <img src="./assets/header.svg" alt="Dhanush Pillay - Systems &amp; Machine Learning Engineer" width="100%" />
 
   <p align="center">
     <a href="https://github.com/DhanushPillay"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-    <a href="https://linkedin.com/in/dhanush-pillay-008a47271"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=36BCF7" alt="LinkedIn" /></a>
+    <a href="https://linkedin.com/in/dhanush-pillay-008a47271"><img src="https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=38BDF8" alt="LinkedIn" /></a>
     <a href="https://huggingface.co/DhanushPillay"><img src="https://img.shields.io/badge/Hugging_Face-0D1117?style=for-the-badge&logo=huggingface&logoColor=FFD21E" alt="Hugging Face" /></a>
+    <a href="https://dhanush-personal-portfolio-three.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=34D399" alt="Portfolio" /></a>
     <a href="mailto:dhanushpillay28@gmail.com"><img src="https://img.shields.io/badge/Email-0D1117?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email" /></a>
-    <a href="https://dhanush-personal-portfolio-three.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
   </p>
 </div>
 
 ---
 
-### About Me
-```python
-class DhanushPillay:
-    def __init__(self):
-        self.education = "MIT ADT University"
-        self.major = "Cloud & Big Data Engineering"
-        
-    def get_focus_areas(self):
-        return [
-            "Cloud Infrastructure & Data Pipelines",
-            "Machine Learning & Multi-modal AI",
-            "Full-Stack Platforms"
-        ]
-```
+### 📌 Overview
 
-<br>
+I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** based at MIT ADT University. My engineering focus centers on building resilient distributed data pipelines, multi-modal AI frameworks, and scalable production platforms. I actively contribute to foundational open-source machine learning infrastructure including Hugging Face `transformers` and Deepset `haystack`.
 
-### Tech Arsenal
-<div align="center">
-  <img src="./assets/tech-arsenal-animated.svg?v=4" alt="Tech Arsenal" width="100%" />
-</div>
+- **Core Engineering:** Distributed Systems · Multi-Modal Machine Learning · High-Throughput Pipelines
+- **Active Research:** Macroeconomic Predictive Modeling · Retrieval-Augmented Generation (RAG) Architecture
+- **Inquiries:** [dhanushpillay28@gmail.com](mailto:dhanushpillay28@gmail.com)
 
-<br>
+---
 
-### Open Source Contribution
+### 🌟 Open Source Engineering
+
 <table width="100%">
   <tr>
-    <td width="10%" align="center" valign="middle">
-      <a href="https://github.com/huggingface"><img src="https://github.com/huggingface.png" width="60" alt="Hugging Face" /></a>
+    <td width="12%" align="center" valign="middle">
+      <a href="https://github.com/huggingface"><img src="https://github.com/huggingface.png" width="56" alt="Hugging Face" /></a>
     </td>
-    <td width="90%" valign="top">
-      <strong><a href="https://github.com/huggingface/transformers">huggingface/transformers</a></strong> (130k+ ⭐)
-      <br><em>Core contributor to the industry-standard NLP library. Enhanced model inference and hardware support.</em><br><br>
+    <td width="88%" valign="top">
+      <strong><a href="https://github.com/huggingface/transformers">huggingface / transformers</a></strong> &nbsp;<code>130k+ ⭐</code>
+      <br><em>Core contributions to the industry-standard multi-modal NLP &amp; vision framework.</em>
       <ul>
-        <li>Resolved a critical bug in <code>compressed_tensors.py</code> to ensure stable tensor operations <a href="https://github.com/huggingface/transformers/pull/47701">(#47701)</a></li>
-        <li>Improved NPU (Neural Processing Unit) detection logic in testing suites for hardware compatibility <a href="https://github.com/huggingface/transformers/pull/47587">(#47587)</a></li>
+        <li>Patched tensor integrity in <code>compressed_tensors.py</code> to ensure stable low-bit quantization operations <a href="https://github.com/huggingface/transformers/pull/47701">(#47701)</a></li>
+        <li>Enhanced NPU (Neural Processing Unit) detection logic within testing suites for custom hardware acceleration <a href="https://github.com/huggingface/transformers/pull/47587">(#47587)</a></li>
       </ul>
     </td>
   </tr>
   <tr>
-    <td width="10%" align="center" valign="middle">
-      <a href="https://github.com/deepset-ai"><img src="https://github.com/deepset-ai.png" width="60" alt="Deepset" /></a>
+    <td width="12%" align="center" valign="middle">
+      <a href="https://github.com/deepset-ai"><img src="https://github.com/deepset-ai.png" width="56" alt="Deepset" /></a>
     </td>
-    <td width="90%" valign="top">
-      <strong><a href="https://github.com/deepset-ai/haystack">deepset-ai/haystack</a></strong> (16k+ ⭐)
-      <br><em>Impactful additions to the leading enterprise framework for building LLM and RAG pipelines.</em><br><br>
+    <td width="88%" valign="top">
+      <strong><a href="https://github.com/deepset-ai/haystack">deepset-ai / haystack</a></strong> &nbsp;<code>16k+ ⭐</code>
+      <br><em>Engineering additions to the enterprise framework for RAG and agentic LLM pipelines.</em>
       <ul>
-        <li>Implemented <code>link_format</code> feature in PDF extraction modules to improve document parsing for RAG <a href="https://github.com/deepset-ai/haystack/pull/12273">(#12273)</a></li>
-        <li>Modernized generator components by fully adopting strict <code>mypy</code> type hints for zero-error CI checks <a href="https://github.com/deepset-ai/haystack/pull/12216">(#12216)</a></li>
+        <li>Implemented <code>link_format</code> in PDF parsing modules to preserve hyperlinks during document ingestion <a href="https://github.com/deepset-ai/haystack/pull/12273">(#12273)</a></li>
+        <li>Refactored generator components to strict <code>mypy</code> type checking for robust CI/CD pipelines <a href="https://github.com/deepset-ai/haystack/pull/12216">(#12216)</a></li>
       </ul>
     </td>
   </tr>
 </table>
 
-<br>
+---
 
-### Featured Projects
+### 🚀 Featured Systems &amp; Projects
+
+<table width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/DhanushPillay/VaticMacro">
+        <img src="./assets/vaticmacro.svg" width="100%" alt="VaticMacro" />
+      </a>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/DhanushPillay/LifeLink">
+        <img src="./assets/lifelink.svg" width="100%" alt="LifeLink" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/DhanushPillay/TechNews-Aggregator">
+        <img src="./assets/technews.svg" width="100%" alt="TechNews Engine" />
+      </a>
+    </td>
+    <td width="50%" align="center" valign="middle">
+      <div align="center">
+        <a href="https://github.com/DhanushPillay?tab=repositories">
+          <img src="https://img.shields.io/badge/Explore_All_Repositories-0D1117?style=for-the-badge&logo=github&logoColor=38BDF8" alt="Explore All Repositories" />
+        </a>
+        <br><br>
+        <p><em>Check out additional open-source systems, data pipelines, and research repos on GitHub.</em></p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🛠️ Technical Arsenal
 
 <div align="center">
-  <a href="https://github.com/DhanushPillay?tab=repositories"><img src="./assets/featured-projects.svg?v=2" alt="Featured Projects Bento Grid" width="100%" /></a>
+  <img src="./assets/tech-stack.svg" width="100%" alt="Technical Arsenal Matrix" />
 </div>
 
+---
+
+### 📊 GitHub Activity &amp; Metrics
+
 <div align="center">
-  <br>
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0D1117&height=100&section=footer" width="100%"/>
+  <a href="https://github.com/DhanushPillay">
+    <img src="https://github-readme-stats.vercel.app/api?username=DhanushPillay&show_icons=true&theme=tokyonight&bg_color=0D1117&title_color=38BDF8&icon_color=38BDF8&text_color=C9D1D9&border_color=30363D&hide_border=false" alt="Dhanush's GitHub Stats" width="49%" />
+  </a>
+  <a href="https://github.com/DhanushPillay">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DhanushPillay&layout=compact&theme=tokyonight&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9&border_color=30363D&hide_border=false" alt="Top Languages" width="49%" />
+  </a>
+</div>
+
+---
+
+<div align="center">
+  <p><b>Let's build something remarkable together.</b></p>
+  <a href="mailto:dhanushpillay28@gmail.com"><img src="https://img.shields.io/badge/Contact_Me-38BDF8?style=flat-square&logo=gmail&logoColor=0D1117" alt="Contact Me" /></a>
+  &nbsp;&nbsp;
+  <a href="https://dhanush-personal-portfolio-three.vercel.app/"><img src="https://img.shields.io/badge/View_Portfolio-34D399?style=flat-square&logo=vercel&logoColor=0D1117" alt="View Portfolio" /></a>
 </div>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161B22" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+
+    <!-- Animated Border Glow -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E">
+        <animate attributeName="stop-color" values="#F43F5E;#A855F7;#F43F5E" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#21262D" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      fill: #FFFFFF;
+    }
+    .badge-tag {
+      font-family: "JetBrains Mono", "Fira Code", monospace, sans-serif;
+      font-weight: 600;
+      font-size: 10px;
+      fill: #F43F5E;
+    }
+    .desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 400;
+      font-size: 12.5px;
+      fill: #8B949E;
+      line-height: 18px;
+    }
+    .chip {
+      fill: #21262D;
+      stroke: #30363D;
+      stroke-width: 1;
+      rx: 4;
+    }
+    .chip-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 500;
+      font-size: 10.5px;
+      fill: #C9D1D9;
+    }
+    .cta-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      fill: #F43F5E;
+    }
+  </style>
+
+  <!-- Card Border & Background -->
+  <rect x="2" y="2" width="406" height="236" rx="12" fill="url(#borderGrad)" />
+  <rect x="3" y="3" width="404" height="234" rx="11" fill="url(#bgGrad)" />
+
+  <g transform="translate(20, 20)">
+    <!-- Header Row: Icon + Title + Type Badge -->
+    <rect x="0" y="0" width="36" height="36" rx="8" fill="#1C2128" stroke="#30363D" stroke-width="1" />
+    <!-- Heart / Pulse Icon -->
+    <path d="M18 10 C14 4, 6 6, 6 13 C6 20, 18 27, 18 27 C18 27, 30 20, 30 13 C30 6, 22 4, 18 10 Z" fill="none" stroke="#F43F5E" stroke-width="2" stroke-linejoin="round" />
+
+    <text x="46" y="16" class="title">LifeLink</text>
+    <rect x="46" y="22" width="138" height="16" rx="4" fill="#2E111A" stroke="#5E1A2C" stroke-width="0.8" />
+    <text x="52" y="34" class="badge-tag">HEALTHCARE PLATFORM</text>
+
+    <!-- Description -->
+    <text x="0" y="65" class="desc">
+      <tspan x="0" dy="0">Real-time medical donor matching and management platform</tspan>
+      <tspan x="0" dy="19">connecting patients with compatible blood and organ donors</tspan>
+      <tspan x="0" dy="19">using geospatial indexing and reactive state queues.</tspan>
+    </text>
+
+    <!-- Tech Chips -->
+    <g transform="translate(0, 130)">
+      <rect x="0" y="0" width="52" height="22" class="chip" />
+      <text x="8" y="15" class="chip-text">React</text>
+
+      <rect x="60" y="0" width="46" height="22" class="chip" />
+      <text x="68" y="15" class="chip-text">Vite</text>
+
+      <rect x="114" y="0" width="62" height="22" class="chip" />
+      <text x="122" y="15" class="chip-text">Node.js</text>
+
+      <rect x="184" y="0" width="74" height="22" class="chip" />
+      <text x="192" y="15" class="chip-text">MongoDB</text>
+
+      <rect x="266" y="0" width="80" height="22" class="chip" />
+      <text x="274" y="15" class="chip-text">Express.js</text>
+    </g>
+
+    <!-- Footer Action -->
+    <g transform="translate(0, 175)">
+      <line x1="0" y1="0" x2="370" y2="0" stroke="#21262D" stroke-width="1" />
+      <text x="0" y="18" class="cta-text">View Repository &amp; Architecture →</text>
+    </g>
+  </g>
+</svg>
