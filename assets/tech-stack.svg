@@ -7,34 +7,37 @@
       <stop offset="100%" stop-color="#05070A" />
     </linearGradient>
 
-    <!-- Edge Fade Masks for Smooth Infinite Scroll -->
+    <!-- Edge Fade Masks for Seamless Borderless Illusion -->
     <linearGradient id="edgeFade" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#080B10" stop-opacity="1" />
-      <stop offset="4%" stop-color="#080B10" stop-opacity="0" />
-      <stop offset="96%" stop-color="#080B10" stop-opacity="0" />
+      <stop offset="6%" stop-color="#080B10" stop-opacity="0" />
+      <stop offset="94%" stop-color="#080B10" stop-opacity="0" />
       <stop offset="100%" stop-color="#080B10" stop-opacity="1" />
     </linearGradient>
 
+    <!-- Glassmorphic Pill Gradient -->
     <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1A2332" />
-      <stop offset="100%" stop-color="#101721" />
+      <stop offset="0%" stop-color="#192332" />
+      <stop offset="100%" stop-color="#0F1622" />
     </linearGradient>
 
-    <!-- Marquee Animation 1 (Scroll Left) -->
+    <!-- PERFECT MATHEMATICAL SEAMLESS KEYFRAMES -->
     <style>
-      @keyframes scrollLeft {
+      @keyframes marqueeLeft {
         0% { transform: translateX(0px); }
-        100% { transform: translateX(-1080px); }
+        100% { transform: translateX(-1170px); }
       }
-      @keyframes scrollRight {
-        0% { transform: translateX(-1080px); }
+      @keyframes marqueeRight {
+        0% { transform: translateX(-1085px); }
         100% { transform: translateX(0px); }
       }
       .track-1 {
-        animation: scrollLeft 28s linear infinite;
+        animation: marqueeLeft 32s linear infinite;
+        will-change: transform;
       }
       .track-2 {
-        animation: scrollRight 28s linear infinite;
+        animation: marqueeRight 32s linear infinite;
+        will-change: transform;
       }
       .pill-text {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
@@ -42,208 +45,207 @@
         font-size: 12px;
         fill: #F1F5F9;
       }
-      .marquee-card {
-        cursor: pointer;
-      }
       @media (prefers-reduced-motion: reduce) {
         .track-1, .track-2 { animation: none; }
       }
     </style>
 
-    <!-- REUSABLE ROW 1 ITEMS (AI & Cloud Streams) -->
+    <!-- REUSABLE ROW 1 ITEMS (Total Width with Gap: 1170px) -->
     <g id="row1Group">
-      <!-- 1. PyTorch -->
+      <!-- 1. PyTorch (w=125) -->
       <g transform="translate(0, 0)">
-        <rect x="0" y="0" width="125" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="125" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <path d="M10 0 C10 0 14 4 14 8 C14 12 11 15 8 15 C3 15 1 11 3 7 C4 5 6 4 6 4 C6 4 5 6 5 8 C5 10 7 12 9 12 C11 12 13 10 13 7 C13 3 10 0 10 0 Z" fill="#EE4C2C" />
           <circle cx="13" cy="3" r="1.8" fill="#EE4C2C" />
         </g>
-        <text x="36" y="26" class="pill-text">PyTorch</text>
+        <text x="38" y="26" class="pill-text">PyTorch</text>
       </g>
 
-      <!-- 2. Hugging Face -->
+      <!-- 2. Hugging Face (w=155) -->
       <g transform="translate(135, 0)">
-        <rect x="0" y="0" width="155" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="155" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <circle cx="10" cy="10" r="10" fill="#FFD21E" />
           <circle cx="6" cy="8" r="1.8" fill="#1E293B" />
           <circle cx="14" cy="8" r="1.8" fill="#1E293B" />
           <path d="M 6 13 Q 10 17 14 13" fill="none" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round" />
         </g>
-        <text x="38" y="26" class="pill-text">Transformers</text>
+        <text x="40" y="26" class="pill-text">Transformers</text>
       </g>
 
-      <!-- 3. Docker -->
+      <!-- 3. Docker (w=120) -->
       <g transform="translate(300, 0)">
-        <rect x="0" y="0" width="120" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 12)">
+        <rect x="0" y="0" width="120" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 12)">
           <path d="M 2 10 Q 7 5 14 7 Q 19 9 20 14 C 17 16 8 16 2 10 Z" fill="#2496ED" />
           <rect x="5" y="5" width="2.5" height="2.5" fill="#2496ED" />
           <rect x="9" y="5" width="2.5" height="2.5" fill="#2496ED" />
           <rect x="9" y="2" width="2.5" height="2.5" fill="#2496ED" />
         </g>
-        <text x="38" y="26" class="pill-text">Docker</text>
+        <text x="40" y="26" class="pill-text">Docker</text>
       </g>
 
-      <!-- 4. Kubernetes -->
+      <!-- 4. Kubernetes (w=145) -->
       <g transform="translate(430, 0)">
-        <rect x="0" y="0" width="145" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="145" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <circle cx="10" cy="10" r="9" fill="none" stroke="#326CE5" stroke-width="2.2" />
           <circle cx="10" cy="10" r="2.5" fill="#326CE5" />
         </g>
-        <text x="38" y="26" class="pill-text">Kubernetes</text>
+        <text x="40" y="26" class="pill-text">Kubernetes</text>
       </g>
 
-      <!-- 5. Apache Spark -->
+      <!-- 5. Apache Spark (w=140) -->
       <g transform="translate(585, 0)">
-        <rect x="0" y="0" width="140" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="140" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <polygon points="10,1 13,7 20,10 13,13 10,19 7,13 0,10 7,7" fill="#E25A1C" />
         </g>
-        <text x="38" y="26" class="pill-text">Apache Spark</text>
+        <text x="40" y="26" class="pill-text">Apache Spark</text>
       </g>
 
-      <!-- 6. Apache Kafka -->
+      <!-- 6. Apache Kafka (w=140) -->
       <g transform="translate(735, 0)">
-        <rect x="0" y="0" width="140" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="140" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <circle cx="5" cy="10" r="2.5" fill="#FFFFFF" />
           <circle cx="15" cy="5" r="2.5" fill="#FFFFFF" />
           <circle cx="15" cy="15" r="2.5" fill="#FFFFFF" />
           <line x1="5" y1="10" x2="15" y2="5" stroke="#FFFFFF" stroke-width="1.5" />
           <line x1="5" y1="10" x2="15" y2="15" stroke="#FFFFFF" stroke-width="1.5" />
         </g>
-        <text x="38" y="26" class="pill-text">Apache Kafka</text>
+        <text x="40" y="26" class="pill-text">Apache Kafka</text>
       </g>
 
-      <!-- 7. Haystack -->
+      <!-- 7. Haystack (w=125) -->
       <g transform="translate(885, 0)">
-        <rect x="0" y="0" width="125" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="125" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <rect x="2" y="2" width="16" height="16" rx="3" fill="#00D084" />
           <path d="M 5 10 L 15 10 M 10 5 L 10 15" stroke="#0D1117" stroke-width="2" stroke-linecap="round" />
         </g>
-        <text x="36" y="26" class="pill-text">Haystack</text>
+        <text x="38" y="26" class="pill-text">Haystack</text>
       </g>
 
-      <!-- 8. Scikit-Learn -->
+      <!-- 8. Scikit-Learn (w=140) -->
       <g transform="translate(1020, 0)">
-        <rect x="0" y="0" width="140" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="140" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <circle cx="10" cy="10" r="9" fill="#F7931E" />
           <circle cx="10" cy="10" r="4.5" fill="#38BDF8" />
         </g>
-        <text x="38" y="26" class="pill-text">Scikit-Learn</text>
+        <text x="40" y="26" class="pill-text">Scikit-Learn</text>
       </g>
     </g>
 
-    <!-- REUSABLE ROW 2 ITEMS (Languages & Full-Stack) -->
+    <!-- REUSABLE ROW 2 ITEMS (Total Width with Gap: 1085px) -->
     <g id="row2Group">
-      <!-- 1. Python -->
+      <!-- 1. Python (w=120) -->
       <g transform="translate(0, 0)">
-        <rect x="0" y="0" width="120" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="120" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <path d="M 10 2 C 6 2 6 4 6 4 L 6 7 L 11 7 L 11 8 L 3 8 C 3 8 2 8 2 11 C 2 14 5 14 5 14 L 7 14 L 7 12 C 7 10 9 9 10 9 L 13 9 C 15 9 16 8 16 6 L 16 4 C 16 4 16 2 10 2 Z" fill="#3776AB" />
           <circle cx="7.5" cy="4.5" r="0.8" fill="#FFFFFF" />
           <path d="M 10 18 C 14 18 14 16 14 16 L 14 13 L 9 13 L 9 12 L 17 12 C 17 12 18 12 18 9 C 18 6 15 6 15 6 L 13 6 L 13 8 C 13 10 11 11 10 11 L 7 11 C 5 11 4 12 4 14 L 4 16 C 4 16 4 18 10 18 Z" fill="#FFD43B" />
           <circle cx="12.5" cy="15.5" r="0.8" fill="#000000" />
         </g>
-        <text x="36" y="26" class="pill-text">Python</text>
+        <text x="38" y="26" class="pill-text">Python</text>
       </g>
 
-      <!-- 2. TypeScript -->
+      <!-- 2. TypeScript (w=135) -->
       <g transform="translate(130, 0)">
-        <rect x="0" y="0" width="135" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="135" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <rect x="0" y="0" width="18" height="18" rx="3" fill="#3178C6" />
           <text x="3.5" y="13.5" font-family="sans-serif" font-weight="900" font-size="9.5" fill="#FFFFFF">TS</text>
         </g>
-        <text x="38" y="26" class="pill-text">TypeScript</text>
+        <text x="40" y="26" class="pill-text">TypeScript</text>
       </g>
 
-      <!-- 3. React -->
+      <!-- 3. React (w=115) -->
       <g transform="translate(275, 0)">
-        <rect x="0" y="0" width="115" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="115" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <ellipse cx="9" cy="9" rx="9" ry="3.5" fill="none" stroke="#61DAFB" stroke-width="1.3" transform="rotate(30 9 9)" />
           <ellipse cx="9" cy="9" rx="9" ry="3.5" fill="none" stroke="#61DAFB" stroke-width="1.3" transform="rotate(90 9 9)" />
           <ellipse cx="9" cy="9" rx="9" ry="3.5" fill="none" stroke="#61DAFB" stroke-width="1.3" transform="rotate(150 9 9)" />
           <circle cx="9" cy="9" r="1.8" fill="#61DAFB" />
         </g>
-        <text x="36" y="26" class="pill-text">React</text>
+        <text x="38" y="26" class="pill-text">React</text>
       </g>
 
-      <!-- 4. Node.js -->
+      <!-- 4. Node.js (w=125) -->
       <g transform="translate(400, 0)">
-        <rect x="0" y="0" width="125" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="125" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <polygon points="10,1 19,6 19,15 10,20 1,15 1,6" fill="#339933" />
           <text x="6.5" y="14" font-family="sans-serif" font-weight="900" font-size="9" fill="#FFFFFF">N</text>
         </g>
-        <text x="38" y="26" class="pill-text">Node.js</text>
+        <text x="40" y="26" class="pill-text">Node.js</text>
       </g>
 
-      <!-- 5. PostgreSQL -->
+      <!-- 5. PostgreSQL (w=145) -->
       <g transform="translate(535, 0)">
-        <rect x="0" y="0" width="145" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="145" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <circle cx="10" cy="10" r="9" fill="#336791" />
           <path d="M 6 8 Q 10 6 14 8 L 14 13 Q 10 15 6 13 Z" fill="#FFFFFF" />
         </g>
-        <text x="38" y="26" class="pill-text">PostgreSQL</text>
+        <text x="40" y="26" class="pill-text">PostgreSQL</text>
       </g>
 
-      <!-- 6. MongoDB -->
+      <!-- 6. MongoDB (w=135) -->
       <g transform="translate(690, 0)">
-        <rect x="0" y="0" width="135" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="135" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <path d="M 10 1 C 10 1 3 6 3 11 C 3 16 10 20 10 20 C 10 20 17 16 17 11 C 17 6 10 1 10 1 Z" fill="#47A248" />
           <line x1="10" y1="3" x2="10" y2="18" stroke="#FFFFFF" stroke-width="1" />
         </g>
-        <text x="36" y="26" class="pill-text">MongoDB</text>
+        <text x="38" y="26" class="pill-text">MongoDB</text>
       </g>
 
-      <!-- 7. Flask -->
+      <!-- 7. Flask (w=115) -->
       <g transform="translate(835, 0)">
-        <rect x="0" y="0" width="115" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="115" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <path d="M 8 1 L 12 1 L 12 7 L 17 16 C 18 18 17 19 15 19 L 5 19 C 3 19 2 18 3 16 L 8 7 Z" fill="none" stroke="#FFFFFF" stroke-width="1.6" />
         </g>
-        <text x="36" y="26" class="pill-text">Flask</text>
+        <text x="38" y="26" class="pill-text">Flask</text>
       </g>
 
-      <!-- 8. Redis -->
+      <!-- 8. Redis (w=115) -->
       <g transform="translate(960, 0)">
-        <rect x="0" y="0" width="115" height="42" rx="21" fill="url(#pillGrad)" stroke="#2D3B4E" stroke-width="1" />
-        <g transform="translate(12, 11)">
+        <rect x="0" y="0" width="115" height="42" rx="21" fill="url(#pillGrad)" stroke="#26354A" stroke-width="1" />
+        <g transform="translate(14, 11)">
           <polygon points="10,2 18,6 10,10 2,6" fill="#DC382D" />
           <polygon points="2,6 10,10 10,18 2,14" fill="#B7271D" />
           <polygon points="18,6 10,10 10,18 18,14" fill="#E24A3F" />
         </g>
-        <text x="36" y="26" class="pill-text">Redis</text>
+        <text x="38" y="26" class="pill-text">Redis</text>
       </g>
     </g>
   </defs>
 
-  <!-- Canvas -->
+  <!-- Base Canvas -->
   <rect x="0" y="0" width="850" height="160" rx="16" fill="url(#marqueeBg)" />
   <rect x="1" y="1" width="848" height="158" rx="15" fill="none" stroke="#1E293B" stroke-width="1" />
 
-  <!-- MARQUEE ROW 1 (Scrolls Left) -->
+  <!-- MARQUEE ROW 1 (Scrolls Left: Seamless Loop) -->
   <g transform="translate(0, 24)">
     <g class="track-1">
       <use href="#row1Group" x="0" />
-      <use href="#row1Group" x="1160" />
+      <use href="#row1Group" x="1170" />
+      <use href="#row1Group" x="2340" />
     </g>
   </g>
 
-  <!-- MARQUEE ROW 2 (Scrolls Right) -->
+  <!-- MARQUEE ROW 2 (Scrolls Right: Seamless Loop) -->
   <g transform="translate(0, 88)">
     <g class="track-2">
       <use href="#row2Group" x="0" />
-      <use href="#row2Group" x="1080" />
+      <use href="#row2Group" x="1085" />
+      <use href="#row2Group" x="2170" />
     </g>
   </g>
 
