@@ -1,145 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 220" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="100%" height="100%">
   <defs>
-    <!-- Deep Canvas Gradient -->
-    <linearGradient id="auroraBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Seamless Canvas Background -->
+    <linearGradient id="headerCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#080B10" />
-      <stop offset="50%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#05070A" />
+      <stop offset="60%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#070A0E" />
     </linearGradient>
 
-    <!-- Animated Shimmer Gradient for Headline -->
-    <linearGradient id="textShimmer" x1="0%" y1="0%" x2="200%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="25%" stop-color="#38BDF8" />
-      <stop offset="50%" stop-color="#FFFFFF" />
-      <stop offset="75%" stop-color="#34D399" />
-      <stop offset="100%" stop-color="#FFFFFF" />
-      <animate attributeName="x1" from="-100%" to="100%" dur="8s" repeatCount="indefinite" />
-      <animate attributeName="x2" from="100%" to="300%" dur="8s" repeatCount="indefinite" />
+    <!-- Flowing Wave Gradients -->
+    <linearGradient id="waveCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0.8" />
     </linearGradient>
 
-    <!-- Animated Ambient Aurora Mesh Lights -->
-    <radialGradient id="meshCyan" cx="25%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.35" />
+    <linearGradient id="waveIndigo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Subtle Ambient Backlight -->
+    <radialGradient id="ambientLight" cx="30%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.22" />
       <stop offset="100%" stop-color="#0284C7" stop-opacity="0" />
-      <animate attributeName="cx" values="25%;35%;20%;25%" dur="10s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="30%;20%;40%;30%" dur="10s" repeatCount="indefinite" />
     </radialGradient>
-
-    <radialGradient id="meshEmerald" cx="75%" cy="70%" r="60%">
-      <stop offset="0%" stop-color="#059669" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0" />
-      <animate attributeName="cx" values="75%;65%;80%;75%" dur="12s" repeatCount="indefinite" />
-      <animate attributeName="cy" values="70%;80%;60%;70%" dur="12s" repeatCount="indefinite" />
-    </radialGradient>
-
-    <radialGradient id="meshPurple" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#6366F1" stop-opacity="0" />
-      <animate attributeName="r" values="50%;60%;45%;50%" dur="8s" repeatCount="indefinite" />
-    </radialGradient>
-
-    <!-- Border Flow -->
-    <linearGradient id="auroraBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8">
-        <animate attributeName="stop-color" values="#38BDF8;#34D399;#818CF8;#38BDF8" dur="7s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.4" />
-    </linearGradient>
   </defs>
 
   <style>
-    @keyframes beaconPulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.6); opacity: 0.3; }
+    @keyframes waveMove1 {
+      0% { transform: translateX(0px); }
+      50% { transform: translateX(-40px) scaleY(1.08); }
+      100% { transform: translateX(0px); }
     }
-    .hero-name {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+    @keyframes waveMove2 {
+      0% { transform: translateX(0px); }
+      50% { transform: translateX(50px) scaleY(0.92); }
+      100% { transform: translateX(0px); }
+    }
+    @keyframes lineDraw {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .display-name {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
       font-weight: 800;
-      font-size: 36px;
-      letter-spacing: -0.5px;
-      fill: url(#textShimmer);
+      font-size: 38px;
+      letter-spacing: -0.8px;
+      fill: #FFFFFF;
     }
-    .hero-role {
+    .display-sub {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 15px;
       fill: #94A3B8;
       letter-spacing: 0.2px;
     }
-    .status-badge {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 600;
-      font-size: 11px;
-      letter-spacing: 0.3px;
-      fill: #E2E8F0;
+    .accent-bar {
+      stroke-dasharray: 400;
+      animation: lineDraw 2.5s ease-out forwards;
     }
-    .pill-tag {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 500;
-      font-size: 11.5px;
-      fill: #CBD5E1;
+    .wave-1 {
+      animation: waveMove1 9s ease-in-out infinite;
+      transform-origin: center;
     }
-    .beacon-dot {
-      animation: beaconPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    .wave-2 {
+      animation: waveMove2 12s ease-in-out infinite;
       transform-origin: center;
     }
     @media (prefers-reduced-motion: reduce) {
-      .beacon-dot, #textShimmer animate, #meshCyan animate, #meshEmerald animate, #meshPurple animate, #auroraBorder animate {
-        animation: none;
-      }
+      .wave-1, .wave-2, .accent-bar { animation: none; }
     }
   </style>
 
-  <!-- Background Base Canvas -->
-  <rect x="0" y="0" width="850" height="220" rx="16" fill="url(#auroraBg)" />
+  <!-- Background Base -->
+  <rect x="0" y="0" width="850" height="180" rx="12" fill="url(#headerCanvas)" />
+  <rect x="0" y="0" width="850" height="180" rx="12" fill="url(#ambientLight)" />
+  <rect x="1" y="1" width="848" height="178" rx="11" fill="none" stroke="#1E293B" stroke-width="1" />
 
-  <!-- Animated Ambient Aurora Mesh Glows -->
-  <rect x="0" y="0" width="850" height="220" rx="16" fill="url(#meshCyan)" />
-  <rect x="0" y="0" width="850" height="220" rx="16" fill="url(#meshEmerald)" />
-  <rect x="0" y="0" width="850" height="220" rx="16" fill="url(#meshPurple)" />
+  <!-- FLOWING KINETIC BACKGROUND WAVES -->
+  <g opacity="0.85">
+    <!-- Wave Layer 2 (Indigo Backdrop) -->
+    <path class="wave-2" d="M -50 140 C 150 110, 300 170, 500 130 C 700 90, 800 160, 950 135" fill="none" stroke="url(#waveIndigo)" stroke-width="2.5" />
 
-  <!-- Outer Sleek Border -->
-  <rect x="1.5" y="1.5" width="847" height="217" rx="15" fill="none" stroke="url(#auroraBorder)" stroke-width="1.5" />
-
-  <!-- TOP STATUS BADGE -->
-  <g transform="translate(32, 28)">
-    <rect x="0" y="0" width="265" height="26" rx="13" fill="#131B26" stroke="#253549" stroke-width="1" />
-    <circle cx="14" cy="13" r="5.5" fill="#10B981" opacity="0.3" class="beacon-dot" />
-    <circle cx="14" cy="13" r="3.5" fill="#10B981" />
-    <text x="28" y="17" class="status-badge">OPEN TO COLLABS &amp; RESEARCH</text>
+    <!-- Wave Layer 1 (Cyan/Mint Foreground) -->
+    <path class="wave-1" d="M -50 150 C 120 120, 280 180, 480 140 C 680 100, 780 170, 950 145" fill="none" stroke="url(#waveCyan)" stroke-width="2" />
   </g>
 
-  <!-- MAIN HERO TEXT -->
-  <g transform="translate(32, 92)">
-    <text x="0" y="24" class="hero-name">Dhanush Pillay</text>
-    <text x="0" y="52" class="hero-role">Cloud &amp; Big Data Engineering · Machine Learning Developer · Open Source</text>
-  </g>
+  <!-- TYPOGRAPHIC CONTENT (Clean, Confident, Human) -->
+  <g transform="translate(42, 58)">
+    <!-- Name -->
+    <text x="0" y="28" class="display-name">Dhanush Pillay</text>
 
-  <!-- BOTTOM CAPABILITY PILLS -->
-  <g transform="translate(32, 172)">
-    <!-- Pill 1 -->
-    <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="220" height="26" rx="13" fill="#141E2B" stroke="#27384D" stroke-width="1" />
-      <text x="14" y="17" class="pill-tag">⭐ <tspan fill="#38BDF8">Transformers</tspan> Contributor</text>
-    </g>
+    <!-- Dynamic Accent Horizon Line -->
+    <line x1="0" y1="46" x2="380" y2="46" stroke="url(#waveCyan)" stroke-width="2" class="accent-bar" />
 
-    <!-- Pill 2 -->
-    <g transform="translate(230, 0)">
-      <rect x="0" y="0" width="220" height="26" rx="13" fill="#141E2B" stroke="#27384D" stroke-width="1" />
-      <text x="14" y="17" class="pill-tag">🌊 Distributed Data Pipelines</text>
-    </g>
-
-    <!-- Pill 3 -->
-    <g transform="translate(460, 0)">
-      <rect x="0" y="0" width="165" height="26" rx="13" fill="#141E2B" stroke="#27384D" stroke-width="1" />
-      <text x="14" y="17" class="pill-tag">🧠 Multi-Modal &amp; RAG</text>
-    </g>
-
-    <!-- Pill 4 -->
-    <g transform="translate(635, 0)">
-      <rect x="0" y="0" width="180" height="26" rx="13" fill="#141E2B" stroke="#27384D" stroke-width="1" />
-      <text x="14" y="17" class="pill-tag">🎓 MIT ADT University</text>
-    </g>
+    <!-- Subtitle / Focus Areas -->
+    <text x="0" y="76" class="display-sub">Cloud &amp; Big Data Engineering · Machine Learning Systems</text>
   </g>
 </svg>
