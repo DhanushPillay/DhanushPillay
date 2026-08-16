@@ -1,101 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="100%" height="100%">
   <defs>
-    <!-- Seamless Canvas Background -->
-    <linearGradient id="headerCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080B10" />
-      <stop offset="60%" stop-color="#0D1117" />
-      <stop offset="100%" stop-color="#070A0E" />
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070A"/>
+      <stop offset="100%" stop-color="#0A0E15"/>
     </linearGradient>
 
-    <!-- Flowing Wave Gradients -->
-    <linearGradient id="waveCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#34D399" stop-opacity="0.8" />
+    <!-- Block Gradient -->
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.4"/>
     </linearGradient>
-
-    <linearGradient id="waveIndigo" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.4" />
-      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#818CF8" stop-opacity="0.4" />
-    </linearGradient>
-
-    <!-- Subtle Ambient Backlight -->
-    <radialGradient id="ambientLight" cx="30%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#0284C7" stop-opacity="0" />
-    </radialGradient>
   </defs>
 
-  <style>
-    @keyframes waveMove1 {
-      0% { transform: translateX(0px); }
-      50% { transform: translateX(-40px) scaleY(1.08); }
-      100% { transform: translateX(0px); }
-    }
-    @keyframes waveMove2 {
-      0% { transform: translateX(0px); }
-      50% { transform: translateX(50px) scaleY(0.92); }
-      100% { transform: translateX(0px); }
-    }
-    @keyframes lineDraw {
-      0% { stroke-dashoffset: 400; }
-      100% { stroke-dashoffset: 0; }
-    }
-    .display-name {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
-      font-weight: 800;
-      font-size: 38px;
-      letter-spacing: -0.8px;
-      fill: #FFFFFF;
-    }
-    .display-sub {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      font-weight: 500;
-      font-size: 15px;
-      fill: #94A3B8;
-      letter-spacing: 0.2px;
-    }
-    .accent-bar {
-      stroke-dasharray: 400;
-      animation: lineDraw 2.5s ease-out forwards;
-    }
-    .wave-1 {
-      animation: waveMove1 9s ease-in-out infinite;
-      transform-origin: center;
-    }
-    .wave-2 {
-      animation: waveMove2 12s ease-in-out infinite;
-      transform-origin: center;
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .wave-1, .wave-2, .accent-bar { animation: none; }
-    }
-  </style>
+  <!-- Background -->
+  <rect width="850" height="180" rx="12" fill="url(#bgGrad)"/>
+  <rect x="0.5" y="0.5" width="849" height="179" rx="12" fill="none" stroke="#1E293B" stroke-width="1"/>
 
-  <!-- Background Base -->
-  <rect x="0" y="0" width="850" height="180" rx="12" fill="url(#headerCanvas)" />
-  <rect x="0" y="0" width="850" height="180" rx="12" fill="url(#ambientLight)" />
-  <rect x="1" y="1" width="848" height="178" rx="11" fill="none" stroke="#1E293B" stroke-width="1" />
-
-  <!-- FLOWING KINETIC BACKGROUND WAVES -->
-  <g opacity="0.85">
-    <!-- Wave Layer 2 (Indigo Backdrop) -->
-    <path class="wave-2" d="M -50 140 C 150 110, 300 170, 500 130 C 700 90, 800 160, 950 135" fill="none" stroke="url(#waveIndigo)" stroke-width="2.5" />
-
-    <!-- Wave Layer 1 (Cyan/Mint Foreground) -->
-    <path class="wave-1" d="M -50 150 C 120 120, 280 180, 480 140 C 680 100, 780 170, 950 145" fill="none" stroke="url(#waveCyan)" stroke-width="2" />
+  <!-- Left: Typography -->
+  <g transform="translate(48, 50)">
+    <text x="0" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="38" fill="#F8FAFC" letter-spacing="-0.5">Dhanush Pillay</text>
+    <text x="0" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="18" fill="#38BDF8" letter-spacing="0.5">Big Data &amp; Cloud Engineer</text>
+    
+    <!-- Clean, separated tags -->
+    <text x="0" y="96" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, monospace" font-weight="500" font-size="12" fill="#94A3B8" letter-spacing="0.5">
+      DISTRIBUTED SYSTEMS <tspan fill="#334155">|</tspan> STREAM PROCESSING <tspan fill="#334155">|</tspan> CLOUD ARCHITECTURE
+    </text>
   </g>
 
-  <!-- TYPOGRAPHIC CONTENT (Clean, Confident, Human) -->
-  <g transform="translate(42, 58)">
-    <!-- Name -->
-    <text x="0" y="28" class="display-name">Dhanush Pillay</text>
+  <!-- Right: Clear, Understandable Data Pipeline -->
+  <g transform="translate(450, 55)">
+    <style>
+      <![CDATA[
+      @keyframes moveData {
+        0% { stroke-dashoffset: 70; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .data-packet {
+        fill: none;
+        stroke: #38BDF8;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-dasharray: 6 64;
+        animation: moveData 1.5s linear infinite;
+      }
+      .data-packet-2 {
+        fill: none;
+        stroke: #34D399;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-dasharray: 6 64;
+        animation: moveData 1.5s linear infinite 0.75s;
+      }
+      
+      @keyframes pulseCloud {
+        0%, 100% { fill-opacity: 0.02; stroke: #38BDF8; }
+        50% { fill-opacity: 0.1; stroke: #7DD3FC; }
+      }
+      .cloud-block {
+        animation: pulseCloud 3s ease-in-out infinite;
+      }
 
-    <!-- Dynamic Accent Horizon Line -->
-    <line x1="0" y1="46" x2="380" y2="46" stroke="url(#waveCyan)" stroke-width="2" class="accent-bar" />
+      @media (prefers-reduced-motion: reduce) {
+        .data-packet, .data-packet-2, .cloud-block { animation: none; }
+      }
+      ]]>
+    </style>
 
-    <!-- Subtitle / Focus Areas -->
-    <text x="0" y="76" class="display-sub">Cloud &amp; Big Data Engineering · Machine Learning Systems</text>
+    <!-- Connection Lines (The Pipeline) -->
+    <!-- From DB to Cloud -->
+    <line x1="70" y1="35" x2="135" y2="35" stroke="#1E293B" stroke-width="2" />
+    <line x1="70" y1="35" x2="135" y2="35" class="data-packet" />
+    
+    <!-- From Cloud to Analytics -->
+    <line x1="205" y1="35" x2="270" y2="35" stroke="#1E293B" stroke-width="2" />
+    <line x1="205" y1="35" x2="270" y2="35" class="data-packet-2" />
+
+    <!-- 1. Source (Database) -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="70" height="70" rx="12" fill="url(#blockGrad)" stroke="#334155" stroke-width="1" />
+      <g transform="translate(23, 15)" stroke="#94A3B8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+      </g>
+      <text x="35" y="58" font-family="-apple-system, sans-serif" font-weight="600" font-size="9" fill="#94A3B8" text-anchor="middle">SOURCES</text>
+    </g>
+
+    <!-- 2. Processing (Cloud) -->
+    <g transform="translate(135, 0)">
+      <rect x="0" y="0" width="70" height="70" rx="12" fill="url(#blockGrad)" stroke="#38BDF8" stroke-width="1" class="cloud-block" />
+      <g transform="translate(23, 16)" stroke="#38BDF8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M17.5 19H9a7 7 0 1 1 6.71-9.9 5.5 5.5 0 0 1 1.79 10.9z"></path>
+      </g>
+      <text x="35" y="58" font-family="-apple-system, sans-serif" font-weight="700" font-size="9" fill="#38BDF8" text-anchor="middle">COMPUTE</text>
+    </g>
+
+    <!-- 3. Destination (Analytics/Charts) -->
+    <g transform="translate(270, 0)">
+      <rect x="0" y="0" width="70" height="70" rx="12" fill="url(#blockGrad)" stroke="#334155" stroke-width="1" />
+      <g transform="translate(23, 15)" stroke="#34D399" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="20" x2="18" y2="10"></line>
+        <line x1="12" y1="20" x2="12" y2="4"></line>
+        <line x1="6" y1="20" x2="6" y2="14"></line>
+        <line x1="2" y1="20" x2="22" y2="20"></line>
+      </g>
+      <text x="35" y="58" font-family="-apple-system, sans-serif" font-weight="600" font-size="9" fill="#94A3B8" text-anchor="middle">ANALYTICS</text>
+    </g>
   </g>
 </svg>

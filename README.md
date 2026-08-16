@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/header.svg" alt="Dhanush Pillay - Systems &amp; Machine Learning Engineer" width="100%" />
+  <img src="./assets/header.svg" alt="Dhanush Pillay - Big Data &amp; Cloud Engineer" width="100%" />
 
   <p align="center">
     <a href="https://github.com/DhanushPillay"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
