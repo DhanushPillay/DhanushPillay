@@ -12,7 +12,7 @@
 
 ---
 
-### 📌 Overview
+### Overview
 
 I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** based at MIT ADT University. My engineering focus centers on building resilient distributed data pipelines, multi-modal AI frameworks, and scalable production platforms. I actively contribute to foundational open-source machine learning infrastructure including Hugging Face `transformers` and Deepset `haystack`.
 
@@ -22,7 +22,7 @@ I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** 
 
 ---
 
-### 🌟 Open Source Engineering
+### Open Source Engineering
 
 <table width="100%">
   <tr>
@@ -30,7 +30,7 @@ I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** 
       <a href="https://github.com/huggingface"><img src="https://github.com/huggingface.png" width="56" alt="Hugging Face" /></a>
     </td>
     <td width="88%" valign="top">
-      <strong><a href="https://github.com/huggingface/transformers">huggingface / transformers</a></strong> &nbsp;<code>130k+ ⭐</code>
+      <strong><a href="https://github.com/huggingface/transformers">huggingface / transformers</a></strong> &nbsp;<code>130k+ Stars</code>
       <br><em>Core contributions to the industry-standard multi-modal NLP &amp; vision framework.</em>
       <ul>
         <li>Patched tensor integrity in <code>compressed_tensors.py</code> to ensure stable low-bit quantization operations <a href="https://github.com/huggingface/transformers/pull/47701">(#47701)</a></li>
@@ -43,7 +43,7 @@ I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** 
       <a href="https://github.com/deepset-ai"><img src="https://github.com/deepset-ai.png" width="56" alt="Deepset" /></a>
     </td>
     <td width="88%" valign="top">
-      <strong><a href="https://github.com/deepset-ai/haystack">deepset-ai / haystack</a></strong> &nbsp;<code>16k+ ⭐</code>
+      <strong><a href="https://github.com/deepset-ai/haystack">deepset-ai / haystack</a></strong> &nbsp;<code>16k+ Stars</code>
       <br><em>Engineering additions to the enterprise framework for RAG and agentic LLM pipelines.</em>
       <ul>
         <li>Implemented <code>link_format</code> in PDF parsing modules to preserve hyperlinks during document ingestion <a href="https://github.com/deepset-ai/haystack/pull/12273">(#12273)</a></li>
@@ -55,7 +55,7 @@ I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** 
 
 ---
 
-### 🚀 Featured Systems &amp; Projects
+### Featured Projects
 
 <table width="100%">
   <tr>
@@ -90,30 +90,8 @@ I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** 
 
 ---
 
-### 🛠️ Technical Arsenal
+### Technical Arsenal
 
 <div align="center">
   <img src="./assets/tech-stack.svg" width="100%" alt="Technical Arsenal Matrix" />
-</div>
-
----
-
-### 📊 GitHub Activity &amp; Metrics
-
-<div align="center">
-  <a href="https://github.com/DhanushPillay">
-    <img src="https://github-readme-stats.vercel.app/api?username=DhanushPillay&show_icons=true&theme=tokyonight&bg_color=0D1117&title_color=38BDF8&icon_color=38BDF8&text_color=C9D1D9&border_color=30363D&hide_border=false" alt="Dhanush's GitHub Stats" width="49%" />
-  </a>
-  <a href="https://github.com/DhanushPillay">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DhanushPillay&layout=compact&theme=tokyonight&bg_color=0D1117&title_color=38BDF8&text_color=C9D1D9&border_color=30363D&hide_border=false" alt="Top Languages" width="49%" />
-  </a>
-</div>
-
----
-
-<div align="center">
-  <p><b>Let's build something remarkable together.</b></p>
-  <a href="mailto:dhanushpillay28@gmail.com"><img src="https://img.shields.io/badge/Contact_Me-38BDF8?style=flat-square&logo=gmail&logoColor=0D1117" alt="Contact Me" /></a>
-  &nbsp;&nbsp;
-  <a href="https://dhanush-personal-portfolio-three.vercel.app/"><img src="https://img.shields.io/badge/View_Portfolio-34D399?style=flat-square&logo=vercel&logoColor=0D1117" alt="View Portfolio" /></a>
 </div>
