@@ -20,9 +20,7 @@ I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** 
 - **Active Research:** Macroeconomic Predictive Modeling · Retrieval-Augmented Generation (RAG) Architecture
 - **Inquiries:** [dhanushpillay28@gmail.com](mailto:dhanushpillay28@gmail.com)
 
----
-
-### Open Source Engineering
+<!-- ### Open Source Engineering
 
 <table width="100%">
   <tr>
@@ -52,6 +50,7 @@ I am a **Cloud & Big Data Engineer** and **Machine Learning Systems Developer** 
     </td>
   </tr>
 </table>
+-->
 
 ---
 
